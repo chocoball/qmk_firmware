@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  /L2 |           |  /L1 |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Grv/L1|  '"  |AltShf| Left |  /L1 |                                       | /L2  | Down |   [  |   ]  | ~L1  |
+ *   |Grv/L1|  '"  |AltShf| LGui |  /L1 |                                       | /L2  | Down |   [  |   ]  | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | App  | LGui |       | Alt  |  Esc   |
@@ -32,23 +32,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
-        KC_EQL,         KC_1,  KC_2,   KC_3,   KC_4,   KC_5,  KC_LEFT,
-        KC_TAB,         KC_Q,  KC_W,   KC_E,   KC_R,   KC_T,  ALL_T(KC_NO),
-        KC_LCTL,        KC_A,  KC_S,   KC_D,   KC_F,   KC_G,
-        KC_LSFT,        KC_Z,  KC_X,   KC_C,   KC_V,   KC_B,  MO(MDIA),
-        LT(SYMB,KC_GRV),KC_QUOT,      LALT(KC_LSFT),  KC_LEFT,MO(SYMB),
+        KC_EQL,         KC_1,   KC_2,   KC_3,   KC_4,   KC_5,  KC_LEFT,
+        KC_TAB,         KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,  ALL_T(KC_NO),
+        KC_LCTL,        KC_A,   KC_S,   KC_D,   KC_F,   KC_G,
+        KC_LSFT,        KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,  MO(MDIA),
+        LT(SYMB,KC_GRV),KC_QUOT,LALT(KC_LSFT),  KC_LGUI,MO(SYMB),
                                               ALT_T(KC_APP),  KC_LGUI,
                                                               KC_HOME,
                                                KC_SPC,KC_BSPC,KC_END,
         // right hand
-             KC_RGHT,     KC_6,   KC_7,     KC_8,   KC_9,   KC_0,             KC_MINS,
-             MEH_T(KC_NO),KC_Y,   KC_U,     KC_I,   KC_O,   KC_P,             KC_BSLS,
-                          KC_H,   KC_J,     KC_K,   KC_L,   LT(MDIA, KC_SCLN),GUI_T(KC_QUOT),
-             MO(SYMB),    KC_N,   KC_M,     KC_COMM,KC_DOT, KC_SLSH,          KC_RSFT,
-                                  MO(MDIA), KC_DOWN,KC_LBRC,KC_RBRC,          KC_FN1,
-             KC_LALT,     KC_ESC,
-             KC_PGUP,
-             KC_PGDN,KC_TAB, KC_ENT
+		 KC_RGHT,     KC_6,   KC_7,     KC_8,   KC_9,   KC_0,             KC_MINS,
+		 MEH_T(KC_NO),KC_Y,   KC_U,     KC_I,   KC_O,   KC_P,             KC_BSLS,
+					  KC_H,   KC_J,     KC_K,   KC_L,   LT(MDIA, KC_SCLN),GUI_T(KC_QUOT),
+		 MO(SYMB),    KC_N,   KC_M,     KC_COMM,KC_DOT, KC_SLSH,          KC_RSFT,
+							  MO(MDIA), KC_DOWN,KC_LBRC,KC_RBRC,          KC_FN1,
+		 KC_LALT,     KC_ESC,
+		 KC_PGUP,
+		 KC_PGDN,KC_TAB, KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
