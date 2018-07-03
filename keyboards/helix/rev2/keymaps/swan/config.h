@@ -62,8 +62,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL_PD2
 
 #define PREVENT_STUCK_MODIFIERS
-#define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 100
+//#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 200
+#define TAPPING_TOGGLE 2
 
 // Helix keyboard RGB LED support
 //#define RGBLIGHT_ANIMATIONS : see ./rules.mk: LED_ANIMATIONS = yes or no

@@ -59,7 +59,6 @@ enum macro_keycodes {
 #define XXXXXXX KC_NO
 //Macros
 #define M_SAMPLE M(KC_SAMPLEMACRO)
-#define TAPPING_TOGGLE 2
 
 #if HELIX_ROWS == 5
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -78,11 +77,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_QWERTY] = LAYOUT( \
-    KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                   KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,    \
-    KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                   KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT,   \
-    TT(RAISE), KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                   KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_COLN,   \
-    KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,       KC_RBRC,        KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,   \
-    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, LT(3, KC_SPC), RCTL_T(KC_ENT), KC_DEL, KC_MINS, KC_JYEN, KC_ZKHK, KC_APP,  TT(ADJUST) \
+    KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                    KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,    \
+    KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT,   \
+    TT(RAISE), KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_COLN,   \
+    KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,         KC_RBRC,       KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,   \
+    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(3, KC_ENT), KC_DEL, KC_MINS, KC_JYEN, KC_ZKHK, KC_APP,  TT(ADJUST) \
   ),
 
   [_COLEMAK] = LAYOUT( \
@@ -118,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,   KC_INS,  KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
     TT(RAISE), KC_SLCT, KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
     _______,   KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, _______, _______, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
-    _______,   _______, _______, _______, _______, KC_LCBR, QWERTY,  _______, KC_RCBR, _______,      _______,      _______,      _______, _______  \
+    KC_LRCTL,   _______, _______, _______, _______, KC_LCBR, QWERTY,  _______, KC_RCBR, _______,      _______,      _______,      _______, _______  \
   ),
   /* Raise
    * ,-----------------------------------------.             ,-----------------------------------------.
