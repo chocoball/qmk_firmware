@@ -65,23 +65,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  
   /* Qwerty
    * ,-----------------------------------------.             ,-----------------------------------------.
-   * |   `  |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  |  =   |
+   * |   `  |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  |  \   |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
    * | Tab  |   Q  |   W  |   E  |   R  |   T  |             |   Y  |   U  |   I  |   O  |   P  |  '   |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * | Num  |   A  |   S  |   D  |   F  |   G  |             |   H  |   J  |   K  |   L  |   ;  |  :   |
+   * | Num  |   A  |   S  |   D  |   F  |   G  |             |   H  |   J  |   K  |   L  |   ;  |  ?   |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |   /  |Enter |
+   * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |  Up  | Menu |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * | Ctr  |  OS  | F12  |  F5  | Alt  | Bksp |Space |Enter | Del  |   -  |   \  |ZenHan| Menu | Set  |
+   * | Ctr  |  OS  | F12  |  F5  | Alt  | Bksp |Space |Enter | Del  |   -  |   =  | Left | Down |Right |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_QWERTY] = LAYOUT( \
-    KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                    KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,    \
-    KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT,   \
-    TT(RAISE), KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_COLN,   \
-    KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,         KC_RBRC,       KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,   \
-    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(3, KC_ENT), KC_DEL, KC_MINS, KC_JYEN, KC_ZKHK, KC_APP,  TT(ADJUST) \
+    KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                    KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,  \
+    KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT, \
+    TT(RAISE), KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
+    KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,         KC_RBRC,       KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_UP,   KC_APP,  \
+    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(3, KC_ENT), KC_DEL, KC_MINS, KC_EQL,  KC_LEFT, KC_DOWN, KC_RGHT  \
   ),
 
   [_COLEMAK] = LAYOUT( \
@@ -103,9 +103,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------.             ,-----------------------------------------.
    * | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |             |  F6  |  F7  |  F8  |  F9  | F10  |PrtSc |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |  Ins | ScLk | PgUp |Pouse |      |             |      |      |  Up  |      |      | F12  |
+   * |      | NmLk | ScLk | PgUp |Pouse |      |             |      |      |  Up  |      |      | F12  |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |Select| Home | PgDw | End  |      |             |      | Left | Down |Right |      | F11  |
+   * |      | Ins  | Home | PgDw | End  |      |             |      | Left | Down |Right |      | F11  |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
    * |      | Undo | Cut  | Copy |Paste |      |      |      |      | OSL  | OSDw | OSR  |      |      |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
@@ -114,12 +114,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
   [_LOWER] = LAYOUT( \
     KC_ESC,    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
-    _______,   KC_INS,  KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
-    TT(RAISE), KC_SLCT, KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
-    _______,   KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, _______, _______, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
-    KC_LRCTL,   _______, _______, _______, _______, KC_LCBR, QWERTY,  _______, KC_RCBR, _______,      _______,      _______,      _______, _______  \
+    _______,   KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
+    TT(RAISE), KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
+    _______,   KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, KC_LPRN, KC_RPRN, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
+    KC_LCTL,   _______, _______, _______, _______, KC_LCBR, QWERTY,  _______, KC_RCBR, _______,      _______,      _______,      _______, _______  \
   ),
   /* Raise
+   * 
    * ,-----------------------------------------.             ,-----------------------------------------.
    * |      |      |      |      |      |      |             |      |NumLk |  /   |  *   |  -   |      |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
@@ -144,21 +145,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------.             ,-----------------------------------------.
    * |      |  F1  |  F2  |  F3  |  F4  |  F5  |             |  F6  |  F7  |  F8  |  F9  | F10  |      |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |      |      |HueUp |      |      |             |      |      |ModeUp|      |      | F12  |
+   * |      |      |      |HueUp |      |      |             |      |SpdDw |BriUp |SpdUp |      | F12  |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |      |SadUp |HueDw |SadDw |      |             |      |BriDw |ModeDw|BriUp |      | F11  |
+   * |      |      |SadUp |HueDw |SadDw |      |             |      |ModeDw|BriDw |ModeUp|      | F11  |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      |      |      |      |      |SpdDw |      |SpdUp |      |      |
+   * |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
    * |      |      |      |      |      |      |      |LEDTgl|      |      |      |      |      |      |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_ADJUST] =  LAYOUT( \
-    RESET,   _______, _______, _______, _______, _______,                   _______, _______, _______,  _______, _______, DEBUG,   \
-    _______, _______, _______, RGB_HUI, _______, _______,                   _______, _______, RGB_MOD,  _______, _______, _______, \
-    _______, _______, RGB_SAD, RGB_HUD, RGB_SAI, _______,                   _______, RGB_VAD, RGB_RMOD, RGB_VAI, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, RGB_SPD, _______,  RGB_SPI, _______, _______, \
-    _______, _______, _______, _______, _______, _______, BL_TOGG, RGB_TOG, _______, _______, _______,  _______, _______, _______  \
+    RESET,   _______, _______, _______, _______, _______,                   _______, _______,  _______, _______, _______, DEBUG,   \
+    _______, _______, _______, RGB_HUI, _______, _______,                   _______, RGB_SPD,  RGB_VAI, RGB_SPI, _______, _______, \
+    _______, _______, RGB_SAD, RGB_HUD, RGB_SAI, _______,                   _______, RGB_RMOD, RGB_VAD, RGB_MOD, _______, _______, \
+    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______, \
+    _______, _______, _______, _______, _______, _______, BL_TOGG, RGB_TOG, _______, _______,  _______, _______, _______, _______  \
   )
 };
 #else
@@ -419,20 +420,20 @@ void render_status(struct CharacterMatrix *matrix) {
   // Define layers here, Have not worked out how to have text displayed for each layer. Copy down the number you see and add a case for it below
   char buf[40];
   snprintf(buf,sizeof(buf), "Undef-%ld", layer_state);
-  matrix_write_P(matrix, PSTR("\nLayer: "));
+  matrix_write_P(matrix, PSTR("\nMode: "));
     switch (layer_state) {
         case L_BASE:
            matrix_write_P(matrix, PSTR("Swan Match"));
            break;
         case L_RAISE:
-           matrix_write_P(matrix, PSTR("TEN Key Mode"));
+           matrix_write_P(matrix, PSTR("Calculater"));
            break;
         case L_LOWER:
-           matrix_write_P(matrix, PSTR("Cursor Mode"));
+           matrix_write_P(matrix, PSTR("Cursor"));
            break;
         case L_ADJUST:
         case L_ADJUST_TRI:
-           matrix_write_P(matrix, PSTR("Setting Mode"));
+           matrix_write_P(matrix, PSTR("Setting"));
            break;
         default:
            matrix_write(matrix, buf);
