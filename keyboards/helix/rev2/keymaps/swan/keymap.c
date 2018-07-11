@@ -1,12 +1,9 @@
-#include "helix.h"
+#include QMK_KEYBOARD_H
 #include "bootloader.h"
-#include "action_layer.h"
-#include "eeconfig.h"
 #ifdef PROTOCOL_LUFA
 #include "lufa.h"
 #include "split_util.h"
 #endif
-#include "LUFA/Drivers/Peripheral/TWI.h"
 #ifdef AUDIO_ENABLE
   #include "audio.h"
 #endif
@@ -29,8 +26,6 @@ extern uint8_t is_master;
 // entirely and just use numbers.
 enum layer_number {
     _QWERTY = 0,
-    _COLEMAK,
-    _DVORAK,
     _LOWER,
     _RAISE,
     _ADJUST
@@ -38,14 +33,9 @@ enum layer_number {
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
-  COLEMAK,
-  DVORAK,
   LOWER,
   RAISE,
   ADJUST,
-  BACKLIT,
-  EISU,
-  KANA,
   RGBRST
 };
 
@@ -79,26 +69,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT( \
     KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                    KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,  \
     KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT, \
-    TT(RAISE), KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
+    TT(2),     KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
     KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,         KC_RBRC,       KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_UP,   KC_APP,  \
-    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(3, KC_ENT), KC_DEL, KC_MINS, KC_EQL,  KC_LEFT, KC_DOWN, KC_RGHT  \
+    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(1, KC_ENT), KC_DEL, KC_MINS, KC_EQL,  KC_LEFT, KC_DOWN, KC_RGHT  \
   ),
-
-  [_COLEMAK] = LAYOUT( \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
-  ),
-  [_DVORAK] = LAYOUT( \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______,                   _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______  \
-  ),
-
   /* Lower
    * ,-----------------------------------------.             ,-----------------------------------------.
    * | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |             |  F6  |  F7  |  F8  |  F9  | F10  |PrtSc |
@@ -113,11 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_LOWER] = LAYOUT( \
-    KC_ESC,    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
-    _______,   KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
-    TT(RAISE), KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
-    _______,   KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, KC_LPRN, KC_RPRN, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
-    KC_LCTL,   _______, _______, _______, _______, KC_LCBR, QWERTY,  _______, KC_RCBR, _______,      _______,      _______,      _______, _______  \
+    KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
+    _______, KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
+    ADJUST,  KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
+    _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, KC_LPRN, KC_RPRN, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
+    KC_LCTL, _______, _______, _______, _______, _______, _______, _______, _______, _______,      _______,      _______,      _______, _______  \
   ),
   /* Raise
    * 
@@ -136,9 +110,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT( \
     _______,   _______, _______,    _______,    _______,     _______,                   _______, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______, \
     _______,   _______, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  _______,                   _______, KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
-    QWERTY,    _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,                   _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
+    TG(0),     _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,                   _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
     _______,   _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
-    _______,   _______, _______,    _______,    _______,     _______, LOWER,   _______, _______, KC_0,    KC_0,    KC_PDOT, KC_PENT, _______  \
+    _______,   _______, _______,    _______,    _______,     _______, ADJUST,  _______, _______, KC_0,    KC_0,    KC_PDOT, KC_PENT, _______  \
   ),
 
   /* Adjust (Lower + Raise)
@@ -159,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, RGB_HUI, _______, _______,                   _______, RGB_SPD,  RGB_VAI, RGB_SPI, _______, _______, \
     _______, _______, RGB_SAD, RGB_HUD, RGB_SAI, _______,                   _______, RGB_RMOD, RGB_VAD, RGB_MOD, _______, _______, \
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, BL_TOGG, RGB_TOG, _______, _______,  _______, _______, _______, _______  \
+    _______, _______, _______, _______, _______, _______, RGBRST,  RGB_TOG, _______, _______,  _______, _______, _______, _______  \
   )
 };
 #else
@@ -169,8 +143,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef AUDIO_ENABLE
 
 float tone_qwerty[][2]     = SONG(QWERTY_SOUND);
-float tone_dvorak[][2]     = SONG(DVORAK_SOUND);
-float tone_colemak[][2]    = SONG(COLEMAK_SOUND);
 float tone_plover[][2]     = SONG(PLOVER_SOUND);
 float tone_plover_gb[][2]  = SONG(PLOVER_GOODBYE_SOUND);
 float music_scale[][2]     = SONG(MUSIC_SCALE_SOUND);
@@ -197,7 +169,25 @@ void update_tri_layer_RGB(uint8_t layer1, uint8_t layer2, uint8_t layer3) {
   }
 }
 
+struct keybuf {
+  char col, row;
+  char frame;
+};
+struct keybuf keybufs[256];
+unsigned char keybuf_begin, keybuf_end;
+
+int col, row;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  col = record->event.key.col;
+  row = record->event.key.row;
+  if (record->event.pressed && ((row < 5 && is_master) || (row >= 5 && !is_master))) {
+    int end = keybuf_end;
+    keybufs[end].col = col;
+    keybufs[end].row = row % 5;
+    keybufs[end].frame = 0;
+    keybuf_end ++;
+  }
+
   switch (keycode) {
     case QWERTY:
       if (record->event.pressed) {
@@ -205,70 +195,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           PLAY_SONG(tone_qwerty);
         #endif
         persistent_default_layer_set(1UL<<_QWERTY);
-      }
-      return false;
-      break;
-    case COLEMAK:
-      if (record->event.pressed) {
-        #ifdef AUDIO_ENABLE
-          PLAY_SONG(tone_colemak);
-        #endif
-        persistent_default_layer_set(1UL<<_COLEMAK);
-      }
-      return false;
-      break;
-    case DVORAK:
-      if (record->event.pressed) {
-        #ifdef AUDIO_ENABLE
-          PLAY_SONG(tone_dvorak);
-        #endif
-        persistent_default_layer_set(1UL<<_DVORAK);
-      }
-      return false;
-      break;
-    case LOWER:
-      if (record->event.pressed) {
-          //not sure how to have keyboard check mode and set it to a variable, so my work around
-          //uses another variable that would be set to true after the first time a reactive key is pressed.
-        if (TOG_STATUS) { //TOG_STATUS checks is another reactive key currently pressed, only changes RGB mode if returns false
-        } else {
-          TOG_STATUS = !TOG_STATUS;
-          #ifdef RGBLIGHT_ENABLE
-            //rgblight_mode(16);
-          #endif
-        }
-        layer_on(_LOWER);
-        update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-      } else {
-        #ifdef RGBLIGHT_ENABLE
-          //rgblight_mode(RGB_current_mode);   // revert RGB to initial mode prior to RGB mode change
-        #endif
-        TOG_STATUS = false;
-        layer_off(_LOWER);
-        update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-      }
-      return false;
-      break;
-    case RAISE:
-      if (record->event.pressed) {
-        //not sure how to have keyboard check mode and set it to a variable, so my work around
-        //uses another variable that would be set to true after the first time a reactive key is pressed.
-        if (TOG_STATUS) { //TOG_STATUS checks is another reactive key currently pressed, only changes RGB mode if returns false
-        } else {
-          TOG_STATUS = !TOG_STATUS;
-          #ifdef RGBLIGHT_ENABLE
-            //rgblight_mode(15);
-          #endif
-        }
-        layer_on(_RAISE);
-        update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
-      } else {
-        #ifdef RGBLIGHT_ENABLE
-          //rgblight_mode(RGB_current_mode);  // revert RGB to initial mode prior to RGB mode change
-        #endif
-        layer_off(_RAISE);
-        TOG_STATUS = false;
-        update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
       }
       return false;
       break;
@@ -289,30 +215,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           RGB_current_mode = rgblight_config.mode;
         }
       #endif
-      return false;
-      break;
-    case EISU:
-      if (record->event.pressed) {
-        if(keymap_config.swap_lalt_lgui==false){
-          register_code(KC_LANG2);
-        }else{
-          SEND_STRING(SS_LALT("`"));
-        }
-      } else {
-        unregister_code(KC_LANG2);
-      }
-      return false;
-      break;
-    case KANA:
-      if (record->event.pressed) {
-        if(keymap_config.swap_lalt_lgui==false){
-          register_code(KC_LANG1);
-        }else{
-          SEND_STRING(SS_LALT("`"));
-        }
-      } else {
-        unregister_code(KC_LANG1);
-      }
       return false;
       break;
     case RGBRST:
@@ -371,8 +273,15 @@ void music_scale_user(void)
 //SSD1306 OLED update loop, make sure to add #define SSD1306OLED in config.h
 #ifdef SSD1306OLED
 
+// hook point for 'led_test' keymap
+//   'default' keymap's led_test_init() is empty function, do nothing
+//   'led_test' keymap's led_test_init() force rgblight_mode_noeeprom(35);
+__attribute__ ((weak))
+void led_custom_init(void) {}
+
 void matrix_scan_user(void) {
-     iota_gfx_task();  // this is what updates the display continuously
+    led_custom_init();
+    iota_gfx_task();  // this is what updates the display continuously
 }
 
 void matrix_update(struct CharacterMatrix *dest,
@@ -426,7 +335,7 @@ void render_status(struct CharacterMatrix *matrix) {
            matrix_write_P(matrix, PSTR("Swan Match"));
            break;
         case L_RAISE:
-           matrix_write_P(matrix, PSTR("Calculater"));
+           matrix_write_P(matrix, PSTR("Calculator"));
            break;
         case L_LOWER:
            matrix_write_P(matrix, PSTR("Cursor"));
