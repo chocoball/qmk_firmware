@@ -49,6 +49,23 @@ enum macro_keycodes {
 #define XXXXXXX KC_NO
 //Macros
 #define M_SAMPLE M(KC_SAMPLEMACRO)
+#define R_SCLN M(0)
+#define R_QUOT M(1)
+
+const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
+    if (record->event.pressed) {
+        switch(id) {
+            case 0:
+                register_code(KC_LSFT);
+                register_code(KC_SCLN);
+                unregister_code(KC_9);
+                register_code(KC_SCLN);
+            case 1:
+                return MACRO(T(CAPS), T(QUOT), T(CAPS));
+        }
+    }
+    return MACRO_NONE;
+};
 
 #if HELIX_ROWS == 5
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -67,11 +84,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_QWERTY] = LAYOUT( \
-    KC_GRV,    KC_1,    KC_2,   KC_3,          KC_4,          KC_5,                                    KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,  \
-    KC_TAB,    KC_Q,    KC_W,   KC_E,          KC_R,          KC_T,                                    KC_Y,   KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT, \
-    TT(2),     KC_A,    KC_S,   KC_D,          KC_F,          KC_G,                                    KC_H,   KC_J,    KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
-    KC_LSFT,   KC_Z,    KC_X,   KC_C,          KC_V,          KC_B,    KC_LBRC,         KC_RBRC,       KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_UP,   KC_APP,  \
-    KC_LCTL,   KC_LGUI, KC_F12, LALT_T(KC_F5), RALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC),  LT(1, KC_ENT), KC_DEL, KC_MINS, KC_EQL,  KC_LEFT, KC_DOWN, KC_RGHT  \
+    KC_ESC,  KC_1,    KC_2,   KC_3,          KC_4,    KC_5,                             KC_6,           KC_7,   KC_8,    KC_9,    KC_0,    KC_BSLS, \
+    KC_TAB,  KC_Q,    KC_W,   KC_E,          KC_R,    KC_T,                             KC_Y,           KC_U,   KC_I,    KC_O,    KC_P,    KC_QUOT, \
+    ADJUST,  KC_A,    KC_S,   KC_D,          KC_F,    KC_G,                             KC_H,           KC_J,   KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
+    KC_LSFT, KC_Z,    KC_X,   KC_C,          KC_V,    KC_B,           KC_LBRC, KC_RBRC, KC_N,           KC_M,   KC_COMM, KC_DOT,  KC_UP,   KC_EQL,  \
+    KC_LCTL, KC_LGUI, KC_F12, LALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC), TT(2),   TT(1),   RCTL_T(KC_ENT), KC_DEL, KC_MINS, KC_LEFT, KC_DOWN, KC_RGHT  \
   ),
   /* Lower
    * ,-----------------------------------------.             ,-----------------------------------------.
@@ -87,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_LOWER] = LAYOUT( \
-    KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
+    KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
     _______, KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
     ADJUST,  KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
     _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, KC_LPRN, KC_RPRN, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
@@ -108,11 +125,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_RAISE] = LAYOUT( \
-    _______,   _______, _______,    _______,    _______,     _______,                   _______, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______, \
-    _______,   _______, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  _______,                   _______, KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
-    TG(0),     _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,                   _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
-    _______,   _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
-    _______,   _______, _______,    _______,    _______,     _______, ADJUST,  _______, _______, KC_0,    KC_0,    KC_PDOT, KC_PENT, _______  \
+    KC_TILD, _______, _______,    _______,    _______,     _______,                   _______, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______, \
+    _______, _______, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  _______,                   _______, KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
+    _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,                   _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
+    _______, _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
+    _______, _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_0,    KC_0,    KC_PDOT, KC_PENT, _______  \
   ),
 
   /* Adjust (Lower + Raise)
@@ -177,6 +194,7 @@ struct keybuf keybufs[256];
 unsigned char keybuf_begin, keybuf_end;
 
 int col, row;
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   col = record->event.key.col;
   row = record->event.key.row;
@@ -187,6 +205,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     keybufs[end].frame = 0;
     keybuf_end ++;
   }
+  //bool SHIFTED = (keyboard_report->mods & MOD_BIT(KC_LSFT)) |
+    //             (keyboard_report->mods & MOD_BIT(KC_RSFT));
 
   switch (keycode) {
     case QWERTY:
@@ -225,6 +245,56 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           RGB_current_mode = rgblight_config.mode;
         }
       #endif
+      break;
+    case KC_SCLN:
+      if (keyboard_report->mods & MOD_BIT(KC_LSFT)) {
+        if (record->event.pressed) {
+          unregister_code(KC_LSFT);
+          register_code(KC_SCLN);
+          unregister_code(KC_SCLN);
+          register_code(KC_LSFT);
+        }
+      } else if (keyboard_report->mods & MOD_BIT(KC_RSFT)) {
+        if (record->event.pressed) {
+          unregister_code(KC_RSFT);
+          register_code(KC_SCLN);
+          unregister_code(KC_SCLN);
+          register_code(KC_RSFT);
+        }
+      } else {
+        if (record->event.pressed) {
+          register_code(KC_LSFT);
+          register_code(KC_SCLN);
+          unregister_code(KC_SCLN);
+          unregister_code(KC_LSFT);
+        }
+      }
+      return false;
+      break;
+    case KC_QUOT:
+      if (keyboard_report->mods & MOD_BIT(KC_LSFT)) {
+        if (record->event.pressed) {
+          unregister_code(KC_LSFT);
+          register_code(KC_QUOT);
+          unregister_code(KC_QUOT);
+          register_code(KC_LSFT);
+        }
+      } else if (keyboard_report->mods & MOD_BIT(KC_RSFT)) {
+        if (record->event.pressed) {
+          unregister_code(KC_RSFT);
+          register_code(KC_QUOT);
+          unregister_code(KC_QUOT);
+          register_code(KC_RSFT);
+        }
+      } else {
+        if (record->event.pressed) {
+          register_code(KC_LSFT);
+          register_code(KC_QUOT);
+          unregister_code(KC_QUOT);
+          unregister_code(KC_LSFT);
+        }
+      }
+      return false;
       break;
   }
   return true;
@@ -280,8 +350,8 @@ __attribute__ ((weak))
 void led_custom_init(void) {}
 
 void matrix_scan_user(void) {
-    led_custom_init();
     iota_gfx_task();  // this is what updates the display continuously
+    //led_custom_init();
 }
 
 void matrix_update(struct CharacterMatrix *dest,
