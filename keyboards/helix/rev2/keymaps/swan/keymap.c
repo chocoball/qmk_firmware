@@ -36,7 +36,9 @@ enum custom_keycodes {
   LOWER,
   RAISE,
   ADJUST,
-  RGBRST
+  RGBRST,
+  KC_00,
+  RGB_RIPPLE
 };
 
 enum macro_keycodes {
@@ -47,10 +49,6 @@ enum macro_keycodes {
 // Fillers to make layering more clear
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
-//Macros
-#define M_SAMPLE M(KC_SAMPLEMACRO)
-#define R_SCLN M(0)
-#define R_QUOT M(1)
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
     if (record->event.pressed) {
@@ -72,23 +70,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  
   /* Qwerty
    * ,-----------------------------------------.             ,-----------------------------------------.
-   * |   `  |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  |  \   |
+   * | Esc  |   1  |   2  |   3  |   4  |   5  |             |   6  |   7  |   8  |   9  |   0  |  \   |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * | Tab  |   Q  |   W  |   E  |   R  |   T  |             |   Y  |   U  |   I  |   O  |   P  |  '   |
+   * | Tab  |   Q  |   W  |   E  |   R  |   T  |             |   Y  |   U  |   I  |   O  |   P  |  =   |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * | Num  |   A  |   S  |   D  |   F  |   G  |             |   H  |   J  |   K  |   L  |   ;  |  ?   |
+   * | Set  |   A  |   S  |   D  |   F  |   G  |             |   H  |   J  |   K  |   L  |   ;  |  '   |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |  Up  | Menu |
+   * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |  /   |  -   |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * | Ctr  |  OS  | F12  |  F5  | Alt  | Bksp |Space |Enter | Del  |   -  |   =  | Left | Down |Right |
+   * | Ctr  |  OS  | F12  | Alt  | Bksp |Space | Calc |Cursol|Enter | Del  |  Up  | Left | Down |Right |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_QWERTY] = LAYOUT( \
     KC_ESC,  KC_1,    KC_2,   KC_3,          KC_4,    KC_5,                             KC_6,           KC_7,   KC_8,    KC_9,    KC_0,    KC_BSLS, \
-    KC_TAB,  KC_Q,    KC_W,   KC_E,          KC_R,    KC_T,                             KC_Y,           KC_U,   KC_I,    KC_O,    KC_P,    KC_QUOT, \
-    ADJUST,  KC_A,    KC_S,   KC_D,          KC_F,    KC_G,                             KC_H,           KC_J,   KC_K,    KC_L,    KC_SCLN, KC_SLSH, \
-    KC_LSFT, KC_Z,    KC_X,   KC_C,          KC_V,    KC_B,           KC_LBRC, KC_RBRC, KC_N,           KC_M,   KC_COMM, KC_DOT,  KC_UP,   KC_EQL,  \
-    KC_LCTL, KC_LGUI, KC_F12, LALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC), TT(2),   TT(1),   RCTL_T(KC_ENT), KC_DEL, KC_MINS, KC_LEFT, KC_DOWN, KC_RGHT  \
+    KC_TAB,  KC_Q,    KC_W,   KC_E,          KC_R,    KC_T,                             KC_Y,           KC_U,   KC_I,    KC_O,    KC_P,    KC_EQL,  \
+    ADJUST,  KC_A,    KC_S,   KC_D,          KC_F,    KC_G,                             KC_H,           KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
+    KC_LSFT, KC_Z,    KC_X,   KC_C,          KC_V,    KC_B,           KC_LBRC, KC_RBRC, KC_N,           KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_MINS, \
+    KC_LCTL, KC_LGUI, KC_F12, LALT_T(KC_F5), KC_BSPC, RSFT_T(KC_SPC), TT(2),   TT(1),   RCTL_T(KC_ENT), KC_DEL, KC_LEFT,  KC_UP,  KC_DOWN, KC_RGHT  \
   ),
   /* Lower
    * ,-----------------------------------------.             ,-----------------------------------------.
@@ -106,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT( \
     KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
     _______, KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______,                   _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
-    ADJUST,  KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
+    _______, KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______,                   _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
     _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, _______, KC_LPRN, KC_RPRN, _______, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
     KC_LCTL, _______, _______, _______, _______, _______, _______, _______, _______, _______,      _______,      _______,      _______, _______  \
   ),
@@ -129,7 +127,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  _______,                   _______, KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
     _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,                   _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
     _______, _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
-    _______, _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_0,    KC_0,    KC_PDOT, KC_PENT, _______  \
+    _______, _______, _______,    _______,    _______,     _______, _______, _______, _______, KC_0,    KC_00,   KC_PDOT, KC_PENT, _______  \
   ),
 
   /* Adjust (Lower + Raise)
@@ -142,15 +140,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
    * |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-   * |      |      |      |      |      |      |      |LEDTgl|      |      |      |      |      |      |
+   * |Ripple|      |      |      |      |      |Reset |LEDTgl|      |      |      |      |      |      |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_ADJUST] =  LAYOUT( \
-    RESET,   _______, _______, _______, _______, _______,                   _______, _______,  _______, _______, _______, DEBUG,   \
-    _______, _______, _______, RGB_HUI, _______, _______,                   _______, RGB_SPD,  RGB_VAI, RGB_SPI, _______, _______, \
-    _______, _______, RGB_SAD, RGB_HUD, RGB_SAI, _______,                   _______, RGB_RMOD, RGB_VAD, RGB_MOD, _______, _______, \
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, RGBRST,  RGB_TOG, _______, _______,  _______, _______, _______, _______  \
+    RESET,      _______, _______, _______, _______, _______,                   _______, _______,  _______, _______, _______, DEBUG,   \
+    _______,    _______, _______, RGB_HUI, _______, _______,                   _______, RGB_SPD,  RGB_VAI, RGB_SPI, _______, _______, \
+    _______,    _______, RGB_SAD, RGB_HUD, RGB_SAI, _______,                   _______, RGB_RMOD, RGB_VAD, RGB_MOD, _______, _______, \
+    _______,    _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______, _______, \
+    RGB_RIPPLE, _______, _______, _______, _______, _______, RGBRST,  RGB_TOG, _______, _______,  _______, _______, _______, _______  \
   )
 };
 #else
@@ -194,6 +192,7 @@ struct keybuf keybufs[256];
 unsigned char keybuf_begin, keybuf_end;
 
 int col, row;
+bool ripple = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   col = record->event.key.col;
@@ -205,19 +204,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     keybufs[end].frame = 0;
     keybuf_end ++;
   }
-  //bool SHIFTED = (keyboard_report->mods & MOD_BIT(KC_LSFT)) |
-    //             (keyboard_report->mods & MOD_BIT(KC_RSFT));
 
   switch (keycode) {
-    case QWERTY:
-      if (record->event.pressed) {
-        #ifdef AUDIO_ENABLE
-          PLAY_SONG(tone_qwerty);
-        #endif
-        persistent_default_layer_set(1UL<<_QWERTY);
-      }
-      return false;
-      break;
     case ADJUST:
         if (record->event.pressed) {
           layer_on(_ADJUST);
@@ -227,22 +215,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         return false;
         break;
       //led operations - RGB mode change now updates the RGB_current_mode to allow the right RGB mode to be set after reactive keys are released
-    case RGB_MOD:
-      #ifdef RGBLIGHT_ENABLE
-        if (record->event.pressed) {
-          rgblight_mode(RGB_current_mode);
-          rgblight_step();
-          RGB_current_mode = rgblight_config.mode;
-        }
-      #endif
-      return false;
-      break;
     case RGBRST:
       #ifdef RGBLIGHT_ENABLE
         if (record->event.pressed) {
+          ripple = false;
           eeconfig_update_rgblight_default();
           rgblight_enable();
-          RGB_current_mode = rgblight_config.mode;
+          rgblight_mode(14);
         }
       #endif
       break;
@@ -292,6 +271,24 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           register_code(KC_QUOT);
           unregister_code(KC_QUOT);
           unregister_code(KC_LSFT);
+        }
+      }
+      return false;
+      break;
+    case KC_00:
+      if (record->event.pressed) {
+        SEND_STRING("00");
+      }
+      return false;
+      break;
+    case RGB_RIPPLE:
+      if (record->event.pressed) {
+        if (ripple) {
+          //ripple = false;
+          //rgblight_enable();
+        } else {
+          rgblight_disable();
+          ripple = true;
         }
       }
       return false;
@@ -351,7 +348,9 @@ void led_custom_init(void) {}
 
 void matrix_scan_user(void) {
     iota_gfx_task();  // this is what updates the display continuously
-    //led_custom_init();
+    if (ripple) {
+      led_custom_init();
+    }
 }
 
 void matrix_update(struct CharacterMatrix *dest,

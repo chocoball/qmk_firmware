@@ -18,8 +18,10 @@ struct keybuf keybufs[256];
 unsigned char keybuf_begin, keybuf_end;
 
 int col, row;
+bool nipple;
 
 void led_custom_init(void) {
+  if (nipple) {
     static int scan_count = -10;
     if (scan_count == -1) {
       rgblight_enable_noeeprom();
@@ -68,4 +70,5 @@ void led_custom_init(void) {
     }
     scan_count++;
     if (scan_count >= 10) { scan_count = 0; }
+  }
 }
