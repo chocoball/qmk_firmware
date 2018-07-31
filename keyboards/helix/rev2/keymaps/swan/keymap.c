@@ -193,6 +193,8 @@ unsigned char keybuf_begin, keybuf_end;
 
 int col, row;
 bool ripple = false;
+unsigned char rgb[7][5][3];
+static int scan_count = -10;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   col = record->event.key.col;
@@ -283,13 +285,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case RGB_RIPPLE:
       if (record->event.pressed) {
-        if (ripple) {
-          //ripple = false;
-          //rgblight_enable();
-        } else {
-          rgblight_disable();
-          ripple = true;
-        }
+        rgblight_mode(0);
+        ripple = true;
       }
       return false;
       break;
@@ -350,6 +347,8 @@ void matrix_scan_user(void) {
     iota_gfx_task();  // this is what updates the display continuously
     if (ripple) {
       led_custom_init();
+    } else {
+      scan_count = -10;
     }
 }
 
