@@ -202,11 +202,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed && ((row < 5 && is_master) || (row >= 5 && !is_master))) {
     int end = keybuf_end;
     keybufs[end].col = col;
-    # 左手って段扱い？まぁいいや。
+    // 左手って段扱い？まぁいいや。
     keybufs[end].row = row % 5;
-    # 波の辺の長さ。0で初期化matrix scan user でインクリメント
+    // 波の辺の長さ。0で初期化matrix scan user でインクリメント
     keybufs[end].frame = 0;
-    # 255超えたらオーバーフローして0に戻って上書き
+    // 255超えたらオーバーフローして0に戻って上書き
     keybuf_end ++;
   }
 
