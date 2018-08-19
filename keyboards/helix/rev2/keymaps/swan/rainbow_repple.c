@@ -15,6 +15,20 @@ unsigned char keybuf_begin, keybuf_end;
 int col, row;
 // 7列5行RGB(各座標のRGB値)入れとく3次元配列
 unsigned char rgb[7][5][3];
+// 列毎の色
+unsigned char rgb_base[11][3] = { \
+  {255,136,  0}, \
+  {233,255,  0}, \
+  { 93,255,  0}, \
+  {  0,255, 46}, \
+  {  0,255,187}, \
+  {  0,187,255}, \
+  {  0, 46,255}, \
+  { 93,  0,255}, \
+  {233,  0,255}, \
+  {255,  0,140}, \
+  {255,  0,  0}, \
+};
 
 void led_custom_init(void) {
     // 各行のキーの数
@@ -23,6 +37,8 @@ void led_custom_init(void) {
     static int keys_sum[] = { 0, 6, 12, 18, 25 };
     // keyを押してからmatrix scan user(≒当該関数)の実行した数
     static int scan_count = -10;
+    // keyを押してからmatrix scan user(≒当該関数)の実行した数
+    static unsigned char all_count = 0;
     if (scan_count == -1) {
       // 初期化
       rgblight_enable_noeeprom();
@@ -32,10 +48,13 @@ void led_custom_init(void) {
       for (unsigned char c=keybuf_begin; c!=keybuf_end; c++) {
         int i = c;
         // FIXME:
-        int color = (keybufs[i].row*3 + keybufs[i].col) % 7 + 1;
-        char r = (color & 0x4) >> 2;
-        char g = (color & 0x2) >> 1;
-        char b = (color & 0x1);
+        //int color = (keybufs[i].row*3 + keybufs[i].col) % 7 + 1;
+        //kchar r = (color & 0x4) >> 2;
+        //kjchar g = (color & 0x2) >> 1;
+        //char b = (color & 0x1);
+        char r = 255;
+        char g = 255;
+        char b = 255;
 
         int y = scan_count;
         // 波の始点から終端までの距離
@@ -72,14 +91,22 @@ void led_custom_init(void) {
       int y = scan_count - 6;
       for (int x=0; x<keys[y]; x++) {
         int at = keys_sum[y] + ((y & 1) ? x : (keys[y] - x - 1));
-        led[at].r = rgb[x][y][0];
-        led[at].g = rgb[x][y][1];
-        led[at].b = rgb[x][y][2];
+        int base_x = (x + y + all_count) % 11;
+        rgb[x][y][0] = MIN(255, rgb_base[base_x][0] + rgb[x][y][0]);
+        rgb[x][y][1] = MIN(255, rgb_base[base_x][1] + rgb[x][y][1]);
+        rgb[x][y][2] = MIN(255, rgb_base[base_x][2] + rgb[x][y][2]);
+        rgblight_setrgb_at(rgb[x][y][0], rgb[x][y][1], rgb[x][y][2], at);
       }
-      rgblight_set();
-    } else if (scan_count == 30) {
+    } else if (scan_count == 11) {
       memset(rgb, 0, sizeof(rgb));
+    } 
+    scan_count ++;
+    if (scan_count == 12) {
+      scan_count = 0;
     }
-    scan_count++;
-    if (scan_count >= 31) { scan_count = 0; }
+      if (all_count < 132) {
+        all_count ++;
+      } else {
+        all_count = 0;
+      }
 }
