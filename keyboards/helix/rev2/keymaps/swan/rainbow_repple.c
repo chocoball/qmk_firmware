@@ -30,7 +30,7 @@ unsigned char rgb_base[11][3] = { \
   {255,  0,  0}, \
 };
 
-void led_custom_init(void) {
+void rainbow_repple(void) {
     // 各行のキーの数
     static int keys[] = { 6, 6, 6, 7, 7 };
     // キーの数の行数
