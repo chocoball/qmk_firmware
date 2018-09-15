@@ -195,7 +195,7 @@ int col, row;
 bool ripple = false;
 unsigned char rgb[7][5][3];
 static int scan_count = -10;
-unsigned char all_count = 0;
+static int sleep_count = 0;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   col = record->event.key.col;
@@ -209,6 +209,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     keybufs[end].frame = 0;
     // 255超えたらオーバーフローして0に戻って上書き
     keybuf_end ++;
+    sleep_count = 0;
   }
 
   switch (keycode) {
@@ -344,12 +345,16 @@ void music_scale_user(void)
 //   'default' keymap's led_test_init() is empty function, do nothing
 //   'led_test' keymap's led_test_init() force rgblight_mode_noeeprom(35);
 __attribute__ ((weak))
-void led_custom_init(void) {}
+void rainbow_repple(void) {}
+__attribute__ ((weak))
+void mod_repple(void) {}
+__attribute__ ((weak))
+void rainy(void) {}
 
 void matrix_scan_user(void) {
     iota_gfx_task();  // this is what updates the display continuously
     if (ripple) {
-      led_custom_init();
+      rainy();
     } else {
       scan_count = -10;
     }

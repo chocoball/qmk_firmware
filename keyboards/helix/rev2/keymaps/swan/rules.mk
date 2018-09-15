@@ -21,7 +21,7 @@ define HELIX_CUSTOMISE_MSG
   $(info Helix customize)
   $(info -  OLED_ENABLE=$(OLED_ENABLE))
   $(info -  LED_BACK_ENABLE=$(LED_BACK_ENABLE))
-  $(info -  LED_UNDERGLOW_ENABLE=$(LED_UNDERGLOW_ENABLE))
+  $(info -  LED_UNDERGLOW_ENABLE=$(LED_UNDERGddLOW_ENABLE))
   $(info -  LED_ANIMATION=$(LED_ANIMATIONS))
   $(info -  IOS_DEVICE_ENABLE=$(IOS_DEVICE_ENABLE))
 endef
@@ -110,7 +110,9 @@ ifeq ($(strip $(LOCAL_GLCDFONT)), yes)
     OPT_DEFS += -DLOCAL_GLCDFONT
 endif
 
-SRC += led_custom_init.c
+SRC += rainy.c
+SRC += rainbow_repple.c
+SRC += repple.c
 
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
 SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend

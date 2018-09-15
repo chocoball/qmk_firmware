@@ -23,6 +23,7 @@ void rainy(void) {
     static int keys_sum[] = { 0, 6, 12, 18, 25 };
     // keyを押してからmatrix scan user(≒当該関数)の実行した数
     static int scan_count = -10;
+    static int sleep_count = 0;
     if (scan_count == -1) {
       // 初期化
       rgblight_enable_noeeprom();
@@ -77,9 +78,29 @@ void rainy(void) {
         led[at].b = rgb[x][y][2];
       }
       rgblight_set();
-    } else if (scan_count == 30) {
+    } else if (scan_count == 11) {
       memset(rgb, 0, sizeof(rgb));
     }
     scan_count++;
-    if (scan_count >= 31) { scan_count = 0; }
+    if (scan_count >= 30) {
+      //int end = keybuf_end;
+      //keybufs[end].col = 4;
+      // 左手って段扱い？まぁいいや。
+      //keybufs[end].row = 4;
+      // 波の辺の長さ。0で初期化matrix scan user でインクリメント
+      //keybufs[end].frame = 0;
+    // 255超えたらオーバーフローして0に戻って上書き
+      //keybuf_end ++;
+      scan_count = 0;
+      sleep_count++;
+    }
+    if (sleep_count >= 30) {
+      int end = keybuf_end;
+      keybufs[end].col = random() % 6;
+      keybufs[end].row = random() % 5;
+      keybufs[end].frame = 0;
+      // 255超えたらオーバーフローして0に戻って上書き
+      keybuf_end ++;
+      sleep_count = 0;
+    }
 }
