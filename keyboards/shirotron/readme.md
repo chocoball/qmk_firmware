@@ -5,9 +5,9 @@ SHIROTRON
 
 A compact split ortholinear keyboard.
 
-Keyboard Maintainer: [Makoto Kurauchi](https://github.com/swanmatch/) [@pluis9](https://twitter.com/swan_match)  
+Keyboard Maintainer: [SwanMatch](https://github.com/swanmatch/) [@swanMatch](https://twitter.com/swan_match)  
 Hardware Supported: CherryMxBitBoard
-Hardware Availability: [PCB & Case Data](https://github.com/swan_match/), [Yushakobo Shop](http://swan-match.hatenablog.com/)
+Hardware Availability: [PCB Data](https://github.com/swanmatch/MxLEDBitPCB), [Lanケーブルは100mしか繋がない](http://swan-match.hatenablog.com/)
 
 Make example for this keyboard (after setting up your build environment):
 
