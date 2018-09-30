@@ -344,10 +344,10 @@ void music_scale_user(void)
 // hook point for 'led_test' keymap
 //   'default' keymap's led_test_init() is empty function, do nothing
 //   'led_test' keymap's led_test_init() force rgblight_mode_noeeprom(35);
-__attribute__ ((weak))
-void rainbow_repple(void) {}
-__attribute__ ((weak))
-void mod_repple(void) {}
+//__attribute__ ((weak))
+//void rainbow_repple(void) {}
+//__attribute__ ((weak))
+//void mod_repple(void) {}
 __attribute__ ((weak))
 void rainy(void) {}
 
