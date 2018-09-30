@@ -100,7 +100,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #if HELIX_ROWS == 4
     #define RGBLED_NUM 25
   #else
-    #define RGBLED_NUM 66
+    #define RGBLED_NUM 30
   #endif
 #else
   #define RGBLED_NUM 6

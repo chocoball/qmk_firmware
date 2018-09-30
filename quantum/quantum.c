@@ -252,7 +252,7 @@ bool process_record_quantum(keyrecord_t *record) {
     process_tap_dance(keycode, record) &&
   #endif
   #ifndef DISABLE_LEADER
-    process_leader(keycode, record) &&
+  //  process_leader(keycode, record) &&
   #endif
   #ifndef DISABLE_CHORDING
     process_chording(keycode, record) &&

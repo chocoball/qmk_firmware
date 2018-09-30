@@ -107,16 +107,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT( \
     KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,        KC_F8,        KC_F9,        KC_F10,  KC_PSCR, \
     _______, KC_NLCK, KC_SLCK, KC_PGUP, KC_PAUS, _______, _______, _______,      KC_UP,        _______,      _______, KC_F12,  \
-    _______, KC_INS,  KC_HOME, KC_PGDN, KC_END,  _______, _______, KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
+    _______, KC_INS,  KC_HOME, KC_PGDN, KC_END,  KC_LT,   KC_GT,   KC_LEFT,      KC_DOWN,      KC_RGHT,      _______, KC_F11,  \
     _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, KC_LPRN, KC_RPRN, LCA(KC_LEFT), LCA(KC_DOWN), LCA(KC_RGHT), _______, _______, \
     KC_LCTL, _______, _______, _______, _______, _______, _______, _______,      _______,      _______,      KC_LPRN, KC_RPRN \
   ),
   /* Raise
    * 
    * ,-----------------------------------------.             ,-----------------------------------------.
-   * |      |      |      |      |      |      |             |      |NumLk |  /   |  *   |  -   |      |
-   * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-   * |      |      |RClick|MusUp |Lclick|      |             |      |  7   |  8   |  9   |  +   |      |
+   * |      |  1   |  2   |  3   |  4   |  5   |             |   6  |  7   |  8   |  9   |  +   |      |
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
    * |      |      |MusLft|MusDw |MusRgt|      |             |      |  4   |  5   |  6   |  ,   |      |
    * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
@@ -126,11 +124,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-------------------------------------------------------------------------------------------------'
    */
   [_RAISE] = LAYOUT( \
-    KC_TILD, _______, _______,    _______,    _______,     _______, _______, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______, \
-    _______, _______, KC_MS_BTN1, KC_MS_UP,   KC_MS_BTN2,  _______, _______, KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
-    _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______, _______, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
-    _______, _______, _______,    _______,    _______,     _______, _______, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
-    _______, _______, _______,    _______,    _______,     _______, _______, KC_0,    KC_00,   KC_PDOT, KC_PENT, _______  \
+    KC_TILD, _______, _______,  _______,  _______, _______, _______, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______, \
+    _______, KC_1,    KC_2,     KC_3,     KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_PPLS, _______, \
+    _______, KC_AT,   KC_HASH,  KC_DLR,   KC_PERC, KC_LCBR, KC_RCBR, KC_4,    KC_5,    KC_6,    KC_PCMM, _______, \
+    _______, KC_CIRC, KC_AMPR,  KC_ASTR,  KC_EXLM, KC_LBRC, KC_RBRC, KC_1,    KC_2,    KC_3,    KC_PEQL, _______, \
+    _______, _______, _______,  _______,  _______, _______, _______, KC_0,    KC_00,   KC_PDOT, KC_PENT, _______  \
   ),
 
   /* Adjust (Lower + Raise)
@@ -289,7 +287,7 @@ void matrix_init_user(void) {
 //   'led_test' keymap's led_test_init() force rgblight_mode_noeeprom(35);
 
 void matrix_scan_user(void) {
-    iota_gfx_task();  // this is what updates the display continuously
+     iota_gfx_task();  // this is what updates the display continuously
 }
 
 void matrix_update(struct CharacterMatrix *dest,
