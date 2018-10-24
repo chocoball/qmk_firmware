@@ -1,0 +1,3937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="drivers">
+        <df name="avr">
+          <in>ws2812.c</in>
+        </df>
+      </df>
+      <df name="keyboards">
+        <df name="1upkeyboards">
+          <df name="1up60hse">
+            <df name="keymaps">
+              <df name="default">
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>1up60hse.c</in>
+          </df>
+          <df name="1up60rgb">
+            <df name="keymaps">
+              <df name="default">
+                <in>keymap.c</in>
+              </df>
+              <df name="iso">
+                <in>keymap.c</in>
+              </df>
+              <df name="raffle">
+                <in>keymap.c</in>
+              </df>
+              <df name="tsangan">
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>1up60rgb.c</in>
+          </df>
+          <df name="sweet16">
+            <df name="keymaps">
+              <df name="default">
+                <in>keymap.c</in>
+              </df>
+              <df name="dlaroe">
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>sweet16.c</in>
+          </df>
+        </df>
+        <df name="4x4">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>4x4.c</in>
+        </df>
+        <df name="5x5">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>5x5.c</in>
+        </df>
+        <df name="6ball">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>6ball.c</in>
+        </df>
+        <df name="9key">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>9key.c</in>
+        </df>
+        <df name="acr60">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="mitch">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>acr60.c</in>
+        </df>
+        <df name="al1">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="splitbs">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>al1.c</in>
+          <in>matrix.c</in>
+        </df>
+        <df name="alf">
+          <df name="dc60">
+            <df name="keymaps">
+              <df name="default">
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>dc60.c</in>
+          </df>
+        </df>
+        <df name="alf_x2">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="hhkb_60">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>alf_x2.c</in>
+        </df>
+        <df name="alpha">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>alpha.c</in>
+        </df>
+        <df name="alps64">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>alps64.c</in>
+          <in>led.c</in>
+        </df>
+        <df name="alu84">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="turbomech">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>alu84.c</in>
+        </df>
+        <df name="amj40">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="fabian">
+              <in>keymap.c</in>
+            </df>
+            <df name="jetpacktuxedo">
+              <in>keymap.c</in>
+            </df>
+            <df name="myee">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>amj40.c</in>
+        </df>
+        <df name="amj60">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="iso_split_rshift">
+              <in>keymap.c</in>
+            </df>
+            <df name="maximized">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>amj60.c</in>
+        </df>
+        <df name="amj96">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>amj96.c</in>
+          <in>matrix.c</in>
+        </df>
+        <df name="amjpad">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="max">
+              <in>keymap.c</in>
+            </df>
+            <df name="ortho_left">
+              <in>keymap.c</in>
+            </df>
+            <df name="ortho_right">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>amjpad.c</in>
+        </df>
+        <df name="at101_blackheart">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>at101_blackheart.c</in>
+        </df>
+        <df name="atom47">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="LEdiodes">
+              <in>keymap.c</in>
+            </df>
+            <df name="maartenwut">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="rev2">
+            <in>rev2.c</in>
+          </df>
+          <df name="rev3">
+            <in>rev3.c</in>
+          </df>
+        </df>
+        <df name="atomic">
+          <df name="keymaps">
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="pvc">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>atomic.c</in>
+        </df>
+        <df name="atreus">
+          <df name="keymaps">
+            <df name="alphadox">
+              <in>keymap.c</in>
+            </df>
+            <df name="classic">
+              <in>keymap.c</in>
+            </df>
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="dvorak_42_key">
+              <in>keymap.c</in>
+            </df>
+            <df name="erlandsona">
+              <in>keymap.c</in>
+            </df>
+            <df name="gerb">
+              <in>keymap.c</in>
+            </df>
+            <df name="henxing">
+              <in>keymap.c</in>
+            </df>
+            <df name="jeremy">
+              <in>keymap.c</in>
+            </df>
+            <df name="khitsule">
+              <in>keymap.c</in>
+            </df>
+            <df name="nojjan">
+              <in>keymap.c</in>
+            </df>
+            <df name="replicaJunction">
+              <in>keymap.c</in>
+            </df>
+            <df name="xk">
+              <in>keymap.c</in>
+            </df>
+            <df name="xyverz">
+              <in>keymap.c</in>
+            </df>
+            <df name="yttyx">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>atreus.c</in>
+        </df>
+        <df name="atreus62">
+          <df name="keymaps">
+            <df name="atreus52">
+              <in>keymap.c</in>
+            </df>
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="mfluid">
+              <in>keymap.c</in>
+            </df>
+            <df name="mneme">
+              <in>keymap.c</in>
+            </df>
+            <df name="pcewing">
+              <in>keymap.c</in>
+            </df>
+            <df name="xyverz">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>atreus62.c</in>
+        </df>
+        <df name="bananasplit">
+          <df name="keymaps">
+            <df name="0010">
+              <in>keymap.c</in>
+            </df>
+            <df name="coloneljesus">
+              <in>keymap.c</in>
+            </df>
+            <df name="default">
+              <in>keymap.c</in>
+            </df>
+            <df name="hhkbanana">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <in>bananasplit.c</in>
+        </df>
+        <df name="helix">
+          <df name="rev2">
+            <df name="keymaps">
+              <df name="swan">
+                <in>keymap.c</in>
+                <in>rainbow_repple.c</in>
+                <in>rainy.c</in>
+                <in>repple.c</in>
+              </df>
+            </df>
+            <in>matrix.c</in>
+            <in>rev2.c</in>
+            <in>split_scomm.c</in>
+            <in>split_util.c</in>
+          </df>
+          <in>helix.c</in>
+          <in>i2c.c</in>
+          <in>serial.c</in>
+          <in>ssd1306.c</in>
+        </df>
+        <df name="shirotron">
+          <df name="rev1">
+            <df name="keymaps">
+              <df name="swan">
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>matrix.c</in>
+            <in>rev1.c</in>
+            <in>split_scomm.c</in>
+            <in>split_util.c</in>
+          </df>
+          <in>i2c.c</in>
+          <in>serial.c</in>
+          <in>shirotron.c</in>
+          <in>ssd1306.c</in>
+        </df>
+      </df>
+      <df name="layouts">
+        <df name="community">
+          <df name="60_ansi">
+            <df name="mechmerlin-ansi">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="60_ansi_split_bs_rshift">
+            <df name="mechmerlin-split">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="60_iso">
+            <df name="unxmaal">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_4x12">
+            <df name="buswerks">
+              <in>keymap.c</in>
+            </df>
+            <df name="colemak_mod_dh_wide">
+              <in>keymap.c</in>
+            </df>
+            <df name="crs">
+              <in>keymap.c</in>
+            </df>
+            <df name="ergodoxish">
+              <in>keymap.c</in>
+            </df>
+            <df name="grahampheath">
+              <in>keymap.c</in>
+            </df>
+            <df name="guidoism">
+              <in>keymap.c</in>
+            </df>
+            <df name="symbolic">
+              <in>keymap.c</in>
+            </df>
+            <df name="wanleg">
+              <in>keymap.c</in>
+            </df>
+            <df name="xyverz">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_5x15">
+            <df name="wanleg">
+              <in>keymap.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="default">
+          <df name="60_ansi">
+            <df name="default_60_ansi">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="60_ansi_split_bs_rshift">
+            <df name="default_60_ansi_split_bs_rshift">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="60_hhkb">
+            <df name="default_60_hhkb">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="60_iso">
+            <df name="default_60_iso">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="numpad_6x4">
+            <df name="default_numpad_6x4">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_4x12">
+            <df name="default_ortho_4x12">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_4x4">
+            <df name="default_ortho_4x4">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_5x15">
+            <df name="default_ortho_5x15">
+              <in>keymap.c</in>
+            </df>
+          </df>
+          <df name="ortho_6x4">
+            <df name="default_ortho_6x4">
+              <in>keymap.c</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="lib">
+        <df name="lufa">
+          <df name="LUFA">
+            <df name="Drivers">
+              <df name="USB">
+                <df name="Class">
+                  <df name="Common">
+                    <in>HIDParser.c</in>
+                  </df>
+                  <df name="Device">
+                    <in>AudioClassDevice.c</in>
+                    <in>CDCClassDevice.c</in>
+                    <in>HIDClassDevice.c</in>
+                    <in>MIDIClassDevice.c</in>
+                    <in>MassStorageClassDevice.c</in>
+                    <in>PrinterClassDevice.c</in>
+                    <in>RNDISClassDevice.c</in>
+                  </df>
+                  <df name="Host">
+                    <in>AndroidAccessoryClassHost.c</in>
+                    <in>AudioClassHost.c</in>
+                    <in>CDCClassHost.c</in>
+                    <in>HIDClassHost.c</in>
+                    <in>MIDIClassHost.c</in>
+                    <in>MassStorageClassHost.c</in>
+                    <in>PrinterClassHost.c</in>
+                    <in>RNDISClassHost.c</in>
+                    <in>StillImageClassHost.c</in>
+                  </df>
+                </df>
+                <df name="Core">
+                  <df name="AVR8">
+                    <in>Device_AVR8.c</in>
+                    <in>EndpointStream_AVR8.c</in>
+                    <in>Endpoint_AVR8.c</in>
+                    <in>Host_AVR8.c</in>
+                    <in>PipeStream_AVR8.c</in>
+                    <in>Pipe_AVR8.c</in>
+                    <in>USBController_AVR8.c</in>
+                    <in>USBInterrupt_AVR8.c</in>
+                  </df>
+                  <in>ConfigDescriptors.c</in>
+                  <in>DeviceStandardReq.c</in>
+                  <in>Events.c</in>
+                  <in>HostStandardReq.c</in>
+                  <in>USBTask.c</in>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="quantum">
+        <df name="api">
+          <in>api_sysex.c</in>
+        </df>
+        <df name="audio">
+          <in>audio.c</in>
+          <in>luts.c</in>
+          <in>voices.c</in>
+        </df>
+        <df name="process_keycode">
+          <in>process_audio.c</in>
+          <in>process_clicky.c</in>
+          <in>process_leader.c</in>
+          <in>process_midi.c</in>
+          <in>process_music.c</in>
+          <in>process_tap_dance.c</in>
+          <in>process_unicode.c</in>
+          <in>process_unicode_common.c</in>
+        </df>
+        <in>api.c</in>
+        <in>keycode_config.c</in>
+        <in>keymap_common.c</in>
+        <in>led_tables.c</in>
+        <in>matrix.c</in>
+        <in>quantum.c</in>
+        <in>rgblight.c</in>
+      </df>
+      <df name="tmk_core">
+        <df name="common">
+          <df name="avr">
+            <in>bootloader.c</in>
+            <in>sleep_led.c</in>
+            <in>suspend.c</in>
+            <in>timer.c</in>
+          </df>
+          <in>action.c</in>
+          <in>action_layer.c</in>
+          <in>action_macro.c</in>
+          <in>action_tapping.c</in>
+          <in>action_util.c</in>
+          <in>backlight.c</in>
+          <in>bootmagic.c</in>
+          <in>command.c</in>
+          <in>debug.c</in>
+          <in>eeconfig.c</in>
+          <in>host.c</in>
+          <in>keyboard.c</in>
+          <in>magic.c</in>
+          <in>mousekey.c</in>
+          <in>print.c</in>
+          <in>report.c</in>
+          <in>util.c</in>
+        </df>
+        <df name="protocol">
+          <df name="lufa">
+            <in>lufa.c</in>
+            <in>outputselect.c</in>
+          </df>
+          <df name="midi">
+            <df name="bytequeue">
+              <in>bytequeue.c</in>
+              <in>interrupt_setting.c</in>
+            </df>
+            <in>midi.c</in>
+            <in>midi_device.c</in>
+            <in>qmk_midi.c</in>
+            <in>sysex_tools.c</in>
+          </df>
+          <in>usb_descriptor.c</in>
+        </df>
+      </df>
+      <df name="users">
+        <df name="mechmerlin">
+          <in>mechmerlin.c</in>
+        </df>
+        <df name="replicaJunction">
+          <in>replicaJunction.c</in>
+        </df>
+        <df name="wanleg">
+          <in>tapdances.c</in>
+          <in>wanleg.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要なファイル"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-Os -std=gnu99 -funsigned-char"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="drivers/avr/ws2812.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <folder path="0/drivers">
+        <cTool>
+          <incDir>
+            <pElem>drivers/avr</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/1up60hse/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60hse/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/1up60rgb/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60rgb/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/1up60rgb/keymaps/iso">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60rgb/keymaps/iso</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/1up60rgb/keymaps/raffle">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60rgb/keymaps/raffle</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/1up60rgb/keymaps/tsangan">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60rgb/keymaps/tsangan</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/sweet16/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/1upkeyboards/sweet16/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/1upkeyboards/sweet16/keymaps/dlaroe">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/1upkeyboards/sweet16/keymaps/dlaroe</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/4x4">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/4x4/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/4x4/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/5x5">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/5x5/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/5x5/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/6ball/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/6ball/keymaps/default</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/9key">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/9key/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/9key/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/acr60/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/acr60/keymaps/default</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/acr60/keymaps/mitch">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/acr60/keymaps/mitch</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/al1/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/al1/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/al1/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/al1/keymaps/splitbs">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/al1/keymaps/splitbs</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alf/dc60/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alf/dc60/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alf_x2/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alf_x2/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alf_x2/keymaps/hhkb_60">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alf_x2/keymaps/hhkb_60</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alpha/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alpha/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alps64/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>keyboards/alps64/keymaps/default</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alu84/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alu84/keymaps/default</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/alu84/keymaps/turbomech">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/alu84/keymaps/turbomech</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>users/turbomech</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj40/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amj40/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj40/keymaps/fabian">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amj40/keymaps/fabian</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj40/keymaps/jetpacktuxedo">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/amj40/keymaps/jetpacktuxedo</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj40/keymaps/myee">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amj40/keymaps/myee</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj60/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/amj60/keymaps/default</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj60/keymaps/iso_split_rshift">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/amj60/keymaps/iso_split_rshift</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj60/keymaps/maximized">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/amj60/keymaps/maximized</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amj96/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amj96/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amjpad">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amjpad/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amjpad/keymaps/default</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amjpad/keymaps/max">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/amjpad/keymaps/max</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amjpad/keymaps/ortho_left">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/amjpad/keymaps/ortho_left</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/amjpad/keymaps/ortho_right">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/amjpad/keymaps/ortho_right</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/at101_blackheart">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/at101_blackheart/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/at101_blackheart/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47/keymaps/LEdiodes">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/atom47/keymaps/LEdiodes</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atom47/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47/keymaps/maartenwut">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atom47/keymaps/maartenwut</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47/rev2">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atom47/rev2</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atom47/rev3">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atom47/rev3</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atomic">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atomic/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atomic/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atomic/keymaps/pvc">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atomic/keymaps/pvc</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/alphadox">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/alphadox</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/classic">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/classic</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/dvorak_42_key">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/dvorak_42_key</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/erlandsona">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/erlandsona</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/gerb">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/gerb</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/henxing">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/henxing</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/jeremy">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/jeremy</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/khitsule">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/khitsule</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/nojjan">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/nojjan</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/replicaJunction">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>users/replicaJunction</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/atreus/keymaps/replicaJunction</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/xk">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/xk</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/xyverz">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus/keymaps/xyverz</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus/keymaps/yttyx">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>keyboards/atreus/keymaps/yttyx</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/atreus52">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/atreus62/keymaps/atreus52</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/atreus62/keymaps/default</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/mfluid">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/atreus62/keymaps/mfluid</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/mneme">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/atreus62/keymaps/mneme</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/gcc/avr/5.4.0/include</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/pcewing">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/atreus62/keymaps/pcewing</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/atreus62/keymaps/xyverz">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/atreus62/keymaps/xyverz</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/bananasplit">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/bananasplit/keymaps/0010">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/bananasplit/keymaps/0010</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/bananasplit/keymaps/coloneljesus">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/bananasplit/keymaps/coloneljesus</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/bananasplit/keymaps/default">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/bananasplit/keymaps/default</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/bananasplit/keymaps/hhkbanana">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/bananasplit/keymaps/hhkbanana</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/helix/rev2/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/helix/rev2/keymaps/swan</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/keyboards/shirotron/rev1/keymaps">
+        <cTool>
+          <incDir>
+            <pElem>keyboards/shirotron/rev1/keymaps/swan</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/shirotron/rev1</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/60_ansi">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>users/mechmerlin</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/community/60_ansi/mechmerlin-ansi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/60_ansi_split_bs_rshift">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>users/mechmerlin</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/community/60_ansi_split_bs_rshift/mechmerlin-split</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/60_iso">
+        <cTool>
+          <incDir>
+            <pElem>layouts/community/60_iso/unxmaal</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/buswerks">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/buswerks</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/colemak_mod_dh_wide">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/colemak_mod_dh_wide</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/crs">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/crs</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/ergodoxish">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/ergodoxish</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/grahampheath">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/grahampheath</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/guidoism">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/guidoism</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/symbolic">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>layouts/community/ortho_4x12/symbolic</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/wanleg">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>users/wanleg</pElem>
+            <pElem>layouts/community/ortho_4x12/wanleg</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_4x12/xyverz">
+        <cTool>
+          <incDir>
+            <pElem>layouts/community/ortho_4x12/xyverz</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/community/ortho_5x15">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>users/wanleg</pElem>
+            <pElem>layouts/community/ortho_5x15/wanleg</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/60_ansi">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/default/60_ansi/default_60_ansi</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/60_ansi_split_bs_rshift">
+        <cTool>
+          <incDir>
+            <pElem>layouts/default/60_ansi_split_bs_rshift/default_60_ansi_split_bs_rshift</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/60_hhkb">
+        <cTool>
+          <incDir>
+            <pElem>layouts/default/60_hhkb/default_60_hhkb</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/60_iso">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/default/60_iso/default_60_iso</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/numpad_6x4">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/default/numpad_6x4/default_numpad_6x4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/ortho_4x12">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>layouts/default/ortho_4x12/default_ortho_4x12</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/ortho_4x4">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>layouts/default/ortho_4x4/default_ortho_4x4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/ortho_5x15">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>layouts/default/ortho_5x15/default_ortho_5x15</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/layouts/default/ortho_6x4">
+        <cTool>
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>layouts/default/ortho_6x4/default_ortho_6x4</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/lib/lufa/LUFA/Drivers/USB/Class/Common">
+        <cTool>
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/lib/lufa/LUFA/Drivers/USB/Class/Device">
+        <cTool>
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Device</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/lib/lufa/LUFA/Drivers/USB/Class/Host">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/quantum/api">
+        <cTool>
+          <incDir>
+            <pElem>quantum/api</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/tmk_core/common/avr">
+        <cTool>
+          <incDir>
+            <pElem>tmk_core/common/avr</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/tmk_core/protocol/lufa">
+        <cTool>
+          <incDir>
+            <pElem>tmk_core/protocol/lufa</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/tmk_core/protocol/midi/bytequeue">
+        <cTool>
+          <incDir>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/users/mechmerlin">
+        <cTool>
+          <incDir>
+            <pElem>users/mechmerlin</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/users/replicaJunction">
+        <cTool>
+          <incDir>
+            <pElem>users/replicaJunction</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/users/wanleg">
+        <cTool>
+          <incDir>
+            <pElem>users/wanleg</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="keyboards/1upkeyboards/1up60hse/1up60hse.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/1upkeyboards/1up60hse</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60hse/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60rgb/1up60rgb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60rgb/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60rgb/keymaps/iso/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60rgb/keymaps/raffle/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/1up60rgb/keymaps/tsangan/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/sweet16/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/sweet16/keymaps/dlaroe/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/1upkeyboards/sweet16/sweet16.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/4x4/4x4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/4x4</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/4x4/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/5x5/5x5.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/5x5</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/5x5/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/6ball/6ball.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/6ball</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/6ball/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/9key/9key.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/9key</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/9key/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/acr60/acr60.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/acr60</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/acr60/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/acr60/keymaps/mitch/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/al1/al1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/al1</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/al1/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/al1/keymaps/splitbs/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/al1/matrix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/al1</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alf/dc60/dc60.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/alf/dc60</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alf/dc60/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alf_x2/alf_x2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alf_x2/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alf_x2/keymaps/hhkb_60/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alpha/alpha.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alpha/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alps64/alps64.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/alps64</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alps64/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alps64/led.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/alps64</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alu84/alu84.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/alu84</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/alu84/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/alu84/keymaps/turbomech/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj40/amj40.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/amj40</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/amj40/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj40/keymaps/fabian/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj40/keymaps/jetpacktuxedo/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj40/keymaps/myee/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj60/amj60.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/amj60</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/amj60/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj60/keymaps/iso_split_rshift/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj60/keymaps/maximized/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj96/amj96.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/amj96</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/amj96/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amj96/matrix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/amj96</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/amjpad/amjpad.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/amjpad</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/amjpad/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amjpad/keymaps/max/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amjpad/keymaps/ortho_left/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/amjpad/keymaps/ortho_right/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/at101_blackheart/at101_blackheart.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/at101_blackheart/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atom47/keymaps/LEdiodes/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atom47/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atom47/keymaps/maartenwut/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atom47/rev2/rev2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atom47/rev3/rev3.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atomic/atomic.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/atomic</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/atomic/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atomic/keymaps/pvc/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/atreus.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/alphadox/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/classic/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/dvorak_42_key/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/erlandsona/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/gerb/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/henxing/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/jeremy/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/khitsule/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/nojjan/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/replicaJunction/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/xk/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/xyverz/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus/keymaps/yttyx/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/atreus62.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/atreus52/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/mfluid/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/mneme/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/pcewing/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/atreus62/keymaps/xyverz/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/bananasplit/bananasplit.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/bananasplit</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/bananasplit/keymaps/0010/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/bananasplit/keymaps/coloneljesus/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/bananasplit/keymaps/default/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/bananasplit/keymaps/hhkbanana/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/helix/helix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/i2c.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/keymaps/swan/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>keyboards/helix</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>keyboards/helix/rev2</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/keymaps/swan/rainbow_repple.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/keymaps/swan/rainy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/keymaps/swan/repple.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/matrix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix/rev2</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>keyboards/helix</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/rev2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix/rev2</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/split_scomm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix/rev2</pElem>
+            <pElem>keyboards/helix</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/rev2/split_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix/rev2</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/serial.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/helix/ssd1306.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/helix</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>keyboards/helix/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/i2c.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/rev1/keymaps/swan/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/rev1/matrix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron/rev1</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/rev1/rev1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron/rev1</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/rev1/split_scomm.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron/rev1</pElem>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/rev1/split_util.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron/rev1</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/serial.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/shirotron.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="keyboards/shirotron/ssd1306.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>keyboards/shirotron</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>keyboards/shirotron/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="layouts/community/60_ansi/mechmerlin-ansi/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/60_ansi_split_bs_rshift/mechmerlin-split/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/60_iso/unxmaal/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/buswerks/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/colemak_mod_dh_wide/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/crs/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/ergodoxish/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/grahampheath/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/guidoism/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/symbolic/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/wanleg/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_4x12/xyverz/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/community/ortho_5x15/wanleg/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/60_ansi/default_60_ansi/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/60_ansi_split_bs_rshift/default_60_ansi_split_bs_rshift/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/60_hhkb/default_60_hhkb/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/60_iso/default_60_iso/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/numpad_6x4/default_numpad_6x4/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/ortho_4x12/default_ortho_4x12/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/ortho_4x4/default_ortho_4x4/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/ortho_5x15/default_ortho_5x15/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="layouts/default/ortho_6x4/default_ortho_6x4/keymap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Common/HIDParser.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/AudioClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/CDCClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>/usr/lib/gcc/avr/5.4.0/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/HIDClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/MIDIClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/MassStorageClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/PrinterClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Device/RNDISClassDevice.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/AndroidAccessoryClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/AudioClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/CDCClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/HIDClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/MIDIClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/MassStorageClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/PrinterClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/RNDISClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Class/Host/StillImageClassHost.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8/Template</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/Host_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/PipeStream_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/Pipe_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>lib/lufa/LUFA/Common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/ConfigDescriptors.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>lib/lufa/LUFA/Common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/Events.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/HostStandardReq.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="lib/lufa/LUFA/Drivers/USB/Core/USBTask.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/api.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>quantum/api</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/api/api_sysex.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="quantum/audio/audio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/audio/luts.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/audio</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/audio/voices.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/keycode_config.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/keymap_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/led_tables.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/matrix.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_audio.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_clicky.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_leader.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_midi.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_music.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_tap_dance.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_unicode.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/process_keycode/process_unicode_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/quantum.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/protocol/lufa</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>quantum/audio</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="quantum/rgblight.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>drivers/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/action.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/action_layer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/action_macro.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/action_tapping.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/action_util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/avr/bootloader.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/avr/sleep_led.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/avr/suspend.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/avr/timer.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/backlight.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/bootmagic.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/command.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/debug.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/eeconfig.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/host.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/keyboard.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/magic.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/mousekey.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/print.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/report.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>quantum</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/common/util.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/common</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/lufa/lufa.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core/AVR8</pElem>
+            <pElem>/usr/lib/avr/include/util</pElem>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include/avr</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Device</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>tmk_core/protocol</pElem>
+            <pElem>tmk_core</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/lufa/outputselect.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/bytequeue/bytequeue.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/bytequeue/interrupt_setting.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/midi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/midi_device.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/qmk_midi.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>tmk_core/protocol/midi/bytequeue</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/midi/sysex_tools.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/protocol/midi</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="tmk_core/protocol/usb_descriptor.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>tmk_core/protocol</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>/usr/lib/gcc/avr/5.4.0/include</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Core</pElem>
+            <pElem>lib/lufa/LUFA/Drivers/USB/Class/Common</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="users/mechmerlin/mechmerlin.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="users/replicaJunction/replicaJunction.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="users/wanleg/tapdances.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>quantum</pElem>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>quantum/process_keycode</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="users/wanleg/wanleg.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <incDir>
+            <pElem>/usr/lib/avr/include</pElem>
+            <pElem>tmk_core/common</pElem>
+            <pElem>tmk_core/common/avr</pElem>
+            <pElem>quantum</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
