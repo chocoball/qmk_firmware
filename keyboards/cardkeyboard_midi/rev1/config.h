@@ -44,7 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 10
+#define MATRIX_ROWS 5
 #define MATRIX_ROW_PINS { D4, C6, D7, E6, B4 }
 
 // wiring of each half

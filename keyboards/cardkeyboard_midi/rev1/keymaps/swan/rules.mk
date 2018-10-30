@@ -10,7 +10,7 @@ CONSOLE_ENABLE = no         # Console for debug(+400)
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-MIDI_ENABLE = no            # MIDI controls
+MIDI_ENABLE = yes            # MIDI controls
 AUDIO_ENABLE = no           # Audio output on port C6
 UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
@@ -62,20 +62,9 @@ else
   RGBLIGHT_ENABLE = no
 endif
 
-ifeq ($(strip $(IOS_DEVICE_ENABLE)), yes)
-    OPT_DEFS += -DIOS_DEVICE_ENABLE
-endif
 
 ifeq ($(strip $(LED_ANIMATIONS)), yes)
     OPT_DEFS += -DRGBLIGHT_ANIMATIONS
-endif
-
-ifeq ($(strip $(OLED_ENABLE)), yes)
-    OPT_DEFS += -DOLED_ENABLE
-endif
-
-ifeq ($(strip $(LOCAL_GLCDFONT)), yes)
-    OPT_DEFS += -DLOCAL_GLCDFONT
 endif
 
 #/SRC += rainy.c

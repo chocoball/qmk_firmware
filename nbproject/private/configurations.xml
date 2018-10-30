@@ -3942,12 +3942,60 @@
         <df name="obj_cardkeyboard_midi_rev1">
         </df>
         <df name="obj_cardkeyboard_midi_rev1_swan">
+          <df name="bytequeue">
+          </df>
           <df name="common">
             <df name="avr">
             </df>
           </df>
           <df name="keyboards">
             <df name="cardkeyboard_midi">
+              <df name="rev1">
+                <df name="keymaps">
+                  <df name="swan">
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="lib">
+            <df name="lufa">
+              <df name="LUFA">
+                <df name="Drivers">
+                  <df name="USB">
+                    <df name="Class">
+                      <df name="Common">
+                      </df>
+                      <df name="Device">
+                      </df>
+                      <df name="Host">
+                      </df>
+                    </df>
+                    <df name="Core">
+                      <df name="AVR8">
+                      </df>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="quantum">
+            <df name="process_keycode">
+            </df>
+          </df>
+          <df name="rev1">
+          </df>
+        </df>
+        <df name="obj_colosseum60_rev1">
+        </df>
+        <df name="obj_colosseum60_rev1_swan">
+          <df name="common">
+            <df name="avr">
+            </df>
+          </df>
+          <df name="keyboards">
+            <df name="colosseum60">
               <df name="rev1">
                 <df name="keymaps">
                   <df name="swan">
@@ -5329,6 +5377,37 @@
           <in>cod67.c</in>
           <in>cod67.h</in>
           <in>config.h</in>
+        </df>
+        <df name="colosseum60">
+          <df name="common">
+            <in>glcdfont.c</in>
+          </df>
+          <df name="rev1">
+            <df name="keymaps">
+              <df name="swan">
+                <in>config.h</in>
+                <in>keymap.c</in>
+              </df>
+            </df>
+            <in>config.h</in>
+            <in>matrix.c</in>
+            <in>rev1.c</in>
+            <in>rev1.h</in>
+            <in>serial_config.h</in>
+            <in>serial_config_simpleapi.h</in>
+            <in>split_scomm.c</in>
+            <in>split_scomm.h</in>
+            <in>split_util.c</in>
+            <in>split_util.h</in>
+          </df>
+          <in>config.h</in>
+          <in>i2c.c</in>
+          <in>i2c.h</in>
+          <in>pro_micro.h</in>
+          <in>serial.c</in>
+          <in>serial.h</in>
+          <in>shirotron.c</in>
+          <in>shirotron.h</in>
         </df>
         <df name="comet46">
           <df name="keymaps">
