@@ -92,7 +92,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_LIMIT_VAL 120
   #define RGBLIGHT_VAL_STEP 17
 #else
-  #define RGBLIGHT_LIMIT_VAL 35
+  #define RGBLIGHT_LIMIT_VAL 40
   #define RGBLIGHT_VAL_STEP 4
 #endif
 #define RGBLIGHT_HUE_STEP 10
