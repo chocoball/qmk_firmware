@@ -186,6 +186,7 @@
       <in>serial.c</in>
       <in>serial.h</in>
       <in>ssd1306.c</in>
+      <in>ssd1306.h</in>
     </df>
   </logicalFolder>
   <projectmakefile>rules.mk</projectmakefile>

@@ -1,9 +1,9 @@
-SHIROTRON
+Colosseum60
 ===
 
-![SHIROTRON](https://cdn-ak.f.st-hatena.com/images/fotolife/s/swan_match/20180915/20180915184339.jpg)
+![Colosseum60](https://booth.pximg.net/026065e4-61c6-4c70-90b9-2f87d9b852bc/i/1073392/1a7586ff-cf39-4332-98d4-26a69ff457dd.jpg)
 
-A compact split ortholinear keyboard.
+A 3D Fullcolor Backlight split keyboard!
 
 Keyboard Maintainer: [SwanMatch](https://github.com/swanmatch/) [@swanMatch](https://twitter.com/swan_match)  
 Hardware Supported: CherryMxBitBoard

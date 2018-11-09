@@ -12,6 +12,7 @@
         <group>
             <file>file:/home/swanmatch/keyboard/qmk_firmware/keyboards/colosseum60/rev1/keymaps/swan/keymap.c</file>
             <file>file:/home/swanmatch/keyboard/qmk_firmware/keyboards/colosseum60/rules.mk</file>
+            <file>file:/home/swanmatch/keyboard/qmk_firmware/keyboards/colosseum60/serial.c</file>
             <file>file:/home/swanmatch/keyboard/qmk_firmware/keyboards/colosseum60/rev1/config.h</file>
             <file>file:/home/swanmatch/keyboard/qmk_firmware/keyboards/colosseum60/rev1/keymaps/swan/rules.mk</file>
         </group>
