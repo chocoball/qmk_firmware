@@ -62,7 +62,7 @@ int serial_update_buffers()
 // Serial pulse period in microseconds.
 #define TID_SEND_ADJUST 14
 
-#define SELECT_SERIAL_SPEED 3
+#define SELECT_SERIAL_SPEED 2
 #if SELECT_SERIAL_SPEED == 0
   // Very High speed
   #define SERIAL_DELAY 4             // micro sec
