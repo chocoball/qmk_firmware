@@ -24,7 +24,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFC51
+<<<<<<< HEAD
 #define PRODUCT_ID      0x0058 
+=======
+#define PRODUCT_ID      0x0058
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    F_YUUCHI
 #define PRODUCT         Lily58
@@ -62,10 +66,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D3
+<<<<<<< HEAD
 #define RGBLIGHT_TIMER
 #define RGBLED_NUM 14    // Number of LEDs
 #define ws2812_PORTREG  PORTD
 #define ws2812_DDRREG   DDRD
+=======
+
+#define RGBLED_NUM 14    // Number of LEDs
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 /*
  * Feature disable options
@@ -83,4 +92,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
+<<<<<<< HEAD
 //#define NO_ACTION_FUNCTION
+=======
+//#define NO_ACTION_FUNCTION
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

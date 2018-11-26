@@ -19,8 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #pragma once
 
+<<<<<<< HEAD
 #include "config.h"
 
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 /* Use I2C or Serial, not both */
 
 #define USE_SERIAL

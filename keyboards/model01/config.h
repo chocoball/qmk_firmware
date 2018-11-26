@@ -33,3 +33,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* The scanners already debounce for us */
 #define DEBOUNCING_DELAY 0
+<<<<<<< HEAD
+=======
+
+/* RGB matrix constants */
+#define DRIVER_LED_TOTAL 64
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

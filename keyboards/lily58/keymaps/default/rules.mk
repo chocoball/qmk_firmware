@@ -4,7 +4,10 @@
 #   the appropriate keymap folder that will get included automatically
 #
 
+<<<<<<< HEAD
 OLED_ENABLE = no
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 RGBLIGHT_ENABLE = no
 
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration(+1000)

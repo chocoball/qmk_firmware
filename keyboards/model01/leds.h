@@ -16,6 +16,7 @@
 #pragma once
 
 #include <quantum.h>
+<<<<<<< HEAD
 
 int set_all_leds_to(uint8_t r, uint8_t g, uint8_t b);
 int set_led_to(uint8_t led, uint8_t r, uint8_t g, uint8_t b);
@@ -23,3 +24,9 @@ int set_led_to(uint8_t led, uint8_t r, uint8_t g, uint8_t b);
 /* Raw (gamma uncorrected) LED values */
 int set_all_leds_to_raw(uint8_t r, uint8_t g, uint8_t b);
 int set_led_to_raw(uint8_t led, uint8_t r, uint8_t g, uint8_t b);
+=======
+#include <rgb_matrix.h>
+
+void set_all_leds_to(uint8_t r, uint8_t g, uint8_t b);
+void set_led_to(int led, uint8_t r, uint8_t g, uint8_t b);
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

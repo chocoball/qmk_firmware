@@ -28,9 +28,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     A split keyboard for the cheap makers
 
 
+<<<<<<< HEAD
 #define PREVENT_STUCK_MODIFIERS
 //#define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 200
+=======
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 /* Use I2C or Serial */
 #define USE_I2C
@@ -88,10 +93,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D3
-#define RGBLIGHT_TIMER
+
 //#define RGBLED_NUM 12    // Number of LEDs. see ./keymaps/default/config.h
-#define ws2812_PORTREG  PORTD
-#define ws2812_DDRREG   DDRD
 
 // Helix keyboard RGB LED support
 //#define RGBLIGHT_ANIMATIONS : see ./rules.mk: LED_ANIMATIONS = yes or no

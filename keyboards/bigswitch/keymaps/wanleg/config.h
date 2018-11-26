@@ -21,7 +21,10 @@
 #define MATRIX_ROW_PINS { B4 }
 #undef MATRIX_COL_PINS
 #define MATRIX_COL_PINS { B6 }
+<<<<<<< HEAD
 //#define UNUSED_PINS
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 /* COL2ROW, ROW2COL, or CUSTOM_MATRIX */
 #undef DIODE_DIRECTION
@@ -32,6 +35,7 @@
 #define BACKLIGHT_LEVELS 3
 #define BREATHING_PERIOD 5
 
+<<<<<<< HEAD
 /* for Tap Dance */
 #undef TAPPING_TERM
 #define TAPPING_TERM 700
@@ -43,3 +47,14 @@
 
 // set flashing LED with QMK DFU
 #define QMK_LED B0
+=======
+/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+#undef DEBOUNCING_DELAY
+#define DEBOUNCING_DELAY 5
+
+// set flashing LED with QMK DFU
+#define QMK_LED B0
+
+// set audio pin
+#define C6_AUDIO
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
