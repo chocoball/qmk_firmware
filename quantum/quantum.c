@@ -256,13 +256,8 @@ bool process_record_quantum(keyrecord_t *record) {
   #ifdef TAP_DANCE_ENABLE
     process_tap_dance(keycode, record) &&
   #endif
-<<<<<<< HEAD
-  #ifndef DISABLE_LEADER
-  //  process_leader(keycode, record) &&
-=======
   #ifdef LEADER_ENABLE
     process_leader(keycode, record) &&
->>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
   #endif
   #ifdef COMBO_ENABLE
     process_combo(keycode, record) &&
