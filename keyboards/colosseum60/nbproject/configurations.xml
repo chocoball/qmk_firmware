@@ -15,7 +15,6 @@
       </df>
       <in>i2c.c</in>
       <in>serial.c</in>
-      <in>shirotron.c</in>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="重要なファイル"
@@ -64,8 +63,6 @@
       <item path="rev1/split_util.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="serial.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="shirotron.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

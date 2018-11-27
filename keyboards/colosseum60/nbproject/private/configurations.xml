@@ -20,14 +20,14 @@
         <in>split_util.c</in>
         <in>split_util.h</in>
       </df>
+      <in>colosseum.c</in>
+      <in>colosseum.h</in>
       <in>config.h</in>
       <in>i2c.c</in>
       <in>i2c.h</in>
       <in>pro_micro.h</in>
       <in>serial.c</in>
       <in>serial.h</in>
-      <in>shirotron.c</in>
-      <in>shirotron.h</in>
     </df>
   </logicalFolder>
   <projectmakefile>rules.mk</projectmakefile>
