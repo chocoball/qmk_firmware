@@ -13,7 +13,6 @@
         <in>split_scomm.c</in>
         <in>split_util.c</in>
       </df>
-      <in>colosseum.c</in>
       <in>i2c.c</in>
       <in>serial.c</in>
     </df>
@@ -51,8 +50,6 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
-      <item path="colosseum.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="i2c.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="rev1/keymaps/swan/keymap.c" ex="false" tool="0" flavor2="0">
