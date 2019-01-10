@@ -32,7 +32,7 @@ enum custom_keycodes {
   RAISE,
   ADJUST,
   RGBRST,
-  KC_00,
+  KC_00
 };
 
 enum macro_keycodes {
@@ -70,7 +70,7 @@ enum macro_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  
-    /* Qwerty
+   /* Qwerty
      * ,-----------------------------------------.                ,-------------------------------------------.
      * | Tab  |   Q  |   W  |   E  |   R  |   T  |                |   Y  |   U  |   I  |   O  |   P  |    [   |
      * |------+------+------+------+------+------|                |------+------+------+------+------+--------|
@@ -85,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q, KC_W, KC_E, KC_R, KC_T,                     KC_Y, KC_U, KC_I,    KC_O,   KC_P,      JP_LBRC,
         KC_LSFT,  KC_A, KC_S, KC_D, KC_F, KC_G,                    KC_H, KC_J, KC_K,    KC_L,   KC_MINS,   JP_RBRC,
         KC_LCTL,  KC_Z, KC_X, KC_C, KC_V, KC_B,                    KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,   JP_ENUN,
-     KC_LCTL,LGUI_T(KC_MHEN), LT(_LOWER, KC_ENT), KC_BSPC,     KC_DEL, LT(_RAISE, KC_SPC),ALT_T(KC_HENK),KC_LSFT
+     LGUI(KC_V),LGUI_T(KC_MHEN), LT(_LOWER, KC_ENT), KC_BSPC,     KC_DEL, LT(_RAISE, KC_SPC),ALT_T(KC_HENK),LCTL(KC_S)
   ),
     /* Lower
      * ,-----------------------------------------.                ,------------------------------------------.
@@ -108,9 +108,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------.                ,------------------------------------------.
      * | Esc  |   1  |   2  |   3  |   4  |   5  |                |  6   |      |  ª  |      |  PGUP|  Bsp  |
      * |------+------+------+------+------+------|                |------+------+------+------+------+-------|
-     * |F11/Shift| F1|  F2  |  F3  |  F4  |  F5  |                |      |  ©  |  «  |  ¨  |PGDOWN|  ENT  |
+     * |F11/Shift| F1|  F2  |  F3  |  F4  |  F5  |                |      |  ©  |  «  |  ¨  | Shift|  ENT  |
      * |------+------+------+------+------+------|                |------+------+------+------+------+-------|
-     * |F12/Ctrl | F6|  F7  |  F8  |  F9  |  F10 |                |      |      |      |      |      |       |
+     * |F12/Ctrl | F6|  F7  |  F8  |  F9  |  F10 |                |      |      |      |      |PGDOWN|       |
      * `------------------------------------------------. ,-------------------------------------------------'
      *                      |      |      | LOWER|      | |       |RAISE |      |      |
      *                      `---------------------------' `----------------------------'
@@ -118,8 +118,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT(
          KC_ESC,  KC_1, KC_2,     KC_3,     KC_4,    KC_5,        KC_6,   KC_NO,   KC_UP,   KC_NO,  KC_PGUP, KC_BSPC,
-   SFT_T(KC_F11),KC_F1, KC_F2,   KC_F3,    KC_F4,   KC_F5,       KC_NO, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_PGDN,  KC_ENT,
-  LCTL_T(KC_F12),KC_F6, KC_F7,   KC_F8,    KC_F9,  KC_F10,       KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,
+   SFT_T(KC_F11),KC_F1, KC_F2,   KC_F3,    KC_F4,   KC_F5,       KC_NO, KC_LEFT, KC_DOWN,KC_RIGHT,  KC_LSFT,  KC_ENT,
+  LCTL_T(KC_F12),KC_F6, KC_F7,   KC_F8,    KC_F9,  KC_F10,       KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_PGDN,   KC_NO,
                       KC_TRNS, KC_LGUI, KC_LOWER, KC_TRNS,     KC_TRNS,KC_RAISE, KC_LALT, KC_TRNS
   ),
 
@@ -221,56 +221,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           rgblight_mode(14);
         }
       #endif
-      break;
-    case KC_SCLN:
-      if (keyboard_report->mods & MOD_BIT(KC_LSFT)) {
-        if (record->event.pressed) {
-          unregister_code(KC_LSFT);
-          register_code(KC_SCLN);
-          unregister_code(KC_SCLN);
-          register_code(KC_LSFT);
-        }
-      } else if (keyboard_report->mods & MOD_BIT(KC_RSFT)) {
-        if (record->event.pressed) {
-          unregister_code(KC_RSFT);
-          register_code(KC_SCLN);
-          unregister_code(KC_SCLN);
-          register_code(KC_RSFT);
-        }
-      } else {
-        if (record->event.pressed) {
-          register_code(KC_LSFT);
-          register_code(KC_SCLN);
-          unregister_code(KC_SCLN);
-          unregister_code(KC_LSFT);
-        }
-      }
-      return false;
-      break;
-    case KC_QUOT:
-      if (keyboard_report->mods & MOD_BIT(KC_LSFT)) {
-        if (record->event.pressed) {
-          unregister_code(KC_LSFT);
-          register_code(KC_QUOT);
-          unregister_code(KC_QUOT);
-          register_code(KC_LSFT);
-        }
-      } else if (keyboard_report->mods & MOD_BIT(KC_RSFT)) {
-        if (record->event.pressed) {
-          unregister_code(KC_RSFT);
-          register_code(KC_QUOT);
-          unregister_code(KC_QUOT);
-          register_code(KC_RSFT);
-        }
-      } else {
-        if (record->event.pressed) {
-          register_code(KC_LSFT);
-          register_code(KC_QUOT);
-          unregister_code(KC_QUOT);
-          unregister_code(KC_LSFT);
-        }
-      }
-      return false;
       break;
     case KC_00:
       if (record->event.pressed) {

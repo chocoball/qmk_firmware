@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x27DB
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    SwanMatch
-#define PRODUCT         Colosseum60
+#define PRODUCT         Colosseum44
 #define DESCRIPTION     Full Color Backlight 3D Keyboard
 
 
@@ -85,7 +85,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Helix keyboard RGB LED support
 //#define RGBLIGHT_ANIMATIONS : see ./rules.mk: LED_ANIMATIONS = yes or no
 //    see ./rules.mk: LED_BACK_ENABLE or LED_UNDERGLOW_ENABLE set yes
-#define RGBLED_NUM 30
+#define RGBLED_NUM 22
 
 
 #ifndef IOS_DEVICE_ENABLE
