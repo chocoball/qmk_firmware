@@ -20,7 +20,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [0] = LAYOUT( /* Base */
 TD(CAD_TD) \
 ),
+<<<<<<< HEAD
+};
+
+void led_set_user(uint8_t usb_led) {
+
+}
+=======
 [1] = LAYOUT( /*Secondary*/
 TD(BSW_TAP_DANCE) \
 ),
 };
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

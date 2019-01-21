@@ -49,3 +49,8 @@
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #endif
+<<<<<<< HEAD:keyboards/gherkin/config.h
+
+#endif
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00:keyboards/40percentclub/gherkin/config.h

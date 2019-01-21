@@ -73,8 +73,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D3
+<<<<<<< HEAD
+#define RGBLIGHT_TIMER
+#define RGBLED_NUM 20    // Number of LEDs
+#define ws2812_PORTREG  PORTD
+#define ws2812_DDRREG   DDRD
+=======
 
 #define RGBLED_NUM 20    // Number of LEDs
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 /*
  * Feature disable options

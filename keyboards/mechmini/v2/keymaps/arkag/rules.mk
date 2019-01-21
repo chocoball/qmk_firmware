@@ -11,7 +11,10 @@ AUDIO_ENABLE = no
 RGBLIGHT_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 UNICODE_ENABLE = yes
+<<<<<<< HEAD
+=======
 LEADER_ENABLE = yes
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 # save me space!
 EXTRAFLAGS += -flto

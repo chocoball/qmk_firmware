@@ -1,4 +1,19 @@
+<<<<<<< HEAD
+#ifndef CONFIG_USER_H
+#define CONFIG_USER_H
+
+#include "../../config.h"
+
+#define QMK_ESC_OUTPUT F1
+#define QMK_ESC_INPUT  D5
+#define QMK_LED        E6
+#define QMK_SPEAKER    C6
+
+#define _______ KC_TRNS
+#define XXXXXXX KC_NO
+=======
 #pragma once
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 #define RGB_MATRIX_KEYPRESSES
 #define RGB_DIGITAL_RAIN_DROPS    24

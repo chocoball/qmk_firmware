@@ -2,7 +2,10 @@
 
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
+<<<<<<< HEAD
+=======
     #define AUDIO_CLICKY
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 #endif
 
 /*
@@ -31,4 +34,7 @@
 
 // Most tactile encoders have detents every 4 stages
 #define ENCODER_RESOLUTION 4
+<<<<<<< HEAD
+=======
 
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

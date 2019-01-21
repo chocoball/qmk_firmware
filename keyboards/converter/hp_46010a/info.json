@@ -3,6 +3,8 @@
   "keyboard_folder": "converter/HP_46010A",
   "url": "https://deskthority.net/wiki/HP_46010A",
   "maintainer": "listofoptions",
+<<<<<<< HEAD
+=======
   "width": 22,
   "height": 7,
   "layouts": {
@@ -118,4 +120,5 @@
       ]
     }
   }
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 }

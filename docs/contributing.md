@@ -71,6 +71,8 @@ Most of our style is pretty easy to pick up on, but right now it's not entirely 
   * If you not sure if a comment is obvious, go ahead and include it.
 * In general we don't wrap lines, they can be as long as needed. If you do choose to wrap lines please do not wrap any wider than 76 columns.
 * We use `#pragma once` at the start of header files rather than old-style include guards (`#ifndef THIS_FILE_H`, `#define THIS_FILE_H`, ..., `#endif`)
+<<<<<<< HEAD
+=======
 
 Here is an example for easy reference:
 
@@ -90,6 +92,7 @@ int foo(void) {
   }
 }
 ```
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 # General Guidelines
 

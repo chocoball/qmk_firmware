@@ -14,6 +14,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "panc60.h"
+<<<<<<< HEAD
+
+#include <avr/pgmspace.h>
+=======
 #ifdef BACKLIGHT_ENABLE
 #include "backlight.h"
 #endif
@@ -23,6 +27,7 @@
 
 #include <avr/pgmspace.h>
 
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 #include "action_layer.h"
 #include "i2c.h"
 #include "quantum.h"
@@ -30,6 +35,8 @@
 __attribute__ ((weak))
 void matrix_scan_user(void) {
 }
+<<<<<<< HEAD
+=======
 
 #ifdef RGBLIGHT_ENABLE
 extern rgblight_config_t rgblight_config;
@@ -62,3 +69,4 @@ void backlight_set(uint8_t level) {
 		PORTD |= (1<<0 | 1<<1 | 1<<4 | 1<<6);
 	}
 }
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

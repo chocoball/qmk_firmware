@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+BACKLIGHT_ENABLE = yes       # Enable keyboard backlight functionality on B7 by default
+
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 #If using a ProMicro and it has the QMK DFU bootloader instead of Caterina,
 #run "make <keyboard>:<keymap> dfu=qmk" when compiling to ensure it is flagged properly after being flashed
 ifeq ($(strip $(dfu)), qmk)
     BOOTLOADER = qmk-dfu
+<<<<<<< HEAD
+endif
+=======
 endif
 
 AUDIO_ENABLE = yes           # Audio output on port C6
@@ -14,3 +22,4 @@ UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 HD44780_ENABLE = no 		# Enable support for HD44780 based LCDs (+400)
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00

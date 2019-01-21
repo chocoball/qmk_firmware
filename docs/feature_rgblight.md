@@ -93,6 +93,10 @@ if `RGBLIGHT_EFFECT_xxxx` or `RGBLIGHT_ANIMATIONS` is defined, you also have a n
 |`RGBLIGHT_MODE_STATIC_GRADIENT`| 0,1,..,9        |Static gradient                        |
 |`RGBLIGHT_MODE_RGB_TEST`     | *None*            |RGB Test                               |
 |`RGBLIGHT_MODE_ALTERNATING`  | *None*            |Alternating                            |
+<<<<<<< HEAD
+
+=======
+>>>>>>> 834b555eca47392ec0bf367b7f20694919d79a00
 
 Check out [this video](https://youtube.com/watch?v=VKrpPAHlisY) for a demonstration.
 
