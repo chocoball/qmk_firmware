@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdbool.h>
-#include <util/delay.h>
+#include "wait.h"
 #include "matrix.h"
 #include "bootloader.h"
 #include "debug.h"
@@ -10,7 +10,12 @@
 #include "eeconfig.h"
 #include "bootmagic.h"
 
+keymap_config_t keymap_config;
 
+/** \brief Bootmagic
+ *
+ * FIXME: needs doc
+ */
 void bootmagic(void)
 {
     /* check signature */
@@ -19,9 +24,9 @@ void bootmagic(void)
     }
 
     /* do scans in case of bounce */
-    print("boogmagic scan: ... ");
+    print("bootmagic scan: ... ");
     uint8_t scan = 100;
-    while (scan--) { matrix_scan(); _delay_ms(10); }
+    while (scan--) { matrix_scan(); wait_ms(10); }
     print("done.\n");
 
     /* bootmagic skip */
@@ -82,10 +87,6 @@ void bootmagic(void)
     }
     eeconfig_update_keymap(keymap_config.raw);
 
-#ifdef NKRO_ENABLE
-    keyboard_nkro = keymap_config.nkro;
-#endif
-
     /* default layer */
     uint8_t default_layer = 0;
     if (bootmagic_scan_keycode(BOOTMAGIC_KEY_DEFAULT_LAYER_0)) { default_layer |= (1<<0); }
@@ -105,19 +106,29 @@ void bootmagic(void)
     }
 }
 
-static bool scan_keycode(uint8_t keycode) {
-    for (int8_t r = MATRIX_ROWS - 1; r >= 0; --r) {
+/** \brief Scan Keycode
+ *
+ * FIXME: needs doc
+ */
+static bool scan_keycode(uint8_t keycode)
+{
+    for (uint8_t r = 0; r < MATRIX_ROWS; r++) {
         matrix_row_t matrix_row = matrix_get_row(r);
-        for (int8_t c = MATRIX_COLS - 1; c >= 0; --c) {
-            if (matrix_row & (matrix_row_t)1 << c) {
-                keypos_t key = (keypos_t){ .row = r, .col = c };
-                if (keycode == keymap_key_to_keycode(0, key)) return true;
+        for (uint8_t c = 0; c < MATRIX_COLS; c++) {
+            if (matrix_row & ((matrix_row_t)1<<c)) {
+                if (keycode == keymap_key_to_keycode(0, (keypos_t){ .row = r, .col = c })) {
+                    return true;
+                }
             }
         }
     }
     return false;
 }
 
+/** \brief Bootmagic Scan Keycode
+ *
+ * FIXME: needs doc
+ */
 bool bootmagic_scan_keycode(uint8_t keycode)
 {
     if (!scan_keycode(BOOTMAGIC_KEY_SALT)) return false;
