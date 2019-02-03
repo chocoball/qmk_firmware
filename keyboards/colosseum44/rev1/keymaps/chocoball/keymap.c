@@ -7,7 +7,9 @@
 #ifdef AUDIO_ENABLE
   #include "audio.h"
 #endif
-
+#ifdef POINTING_DEVICE_ENABLE
+#include "pointing_device.h"
+#endif
 extern keymap_config_t keymap_config;
 
 #ifdef RGBLIGHT_ENABLE
@@ -32,7 +34,9 @@ enum custom_keycodes {
   RAISE,
   ADJUST,
   RGBRST,
-  KC_00
+  KC_00,
+  LCLK,
+  RCLK,
 };
 
 enum macro_keycodes {
@@ -119,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT(
       KC_TRNS, KC_NO,   KC_NO,  KC_MS_U,   KC_NO,   KC_F5,         KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_PGUP, KC_HOME,
       KC_TRNS, KC_NO, KC_MS_L,  KC_MS_D, KC_MS_R,  KC_F10,       KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,  KC_PGDN,  KC_END,
-      KC_TRNS, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,         KC_NO, KC_BTN1, KC_BTN1,   KC_NO,    KC_NO,   KC_NO,
+      KC_TRNS, KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,         KC_NO, LCLK, RCLK,   KC_NO,    KC_NO,   KC_NO,
                       KC_TRNS, KC_TRNS,  KC_LOWER, KC_TRNS,     KC_TRNS,KC_RAISE, KC_TRNS, KC_TRNS
   ),
 
@@ -146,6 +150,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // define variables for reactive RGB
 bool TOG_STATUS = false;
 int RGB_current_mode;
+
+static uint8_t mouseButtons = 0;
 
 void persistent_default_layer_set(uint16_t default_layer) {
   eeconfig_update_default_layer(default_layer);
@@ -228,6 +234,24 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
       break;
+    case LCLK:
+      if (record->event.pressed) {
+        mouseButtons |= 1;
+      }
+      else {
+        mouseButtons &= ~1;
+      }
+      return false;
+      break;
+    case RCLK:
+      if (record->event.pressed) {
+        mouseButtons |= 2;
+      }
+      else {
+        mouseButtons &= ~2;
+      }
+      return false;
+      break;
   }
   return true;
 }
@@ -239,4 +263,12 @@ void matrix_init_user(void) {
     #ifdef RGBLIGHT_ENABLE
       RGB_current_mode = rgblight_config.mode;
     #endif
+}
+
+void pointing_device_task(void)
+{
+    report_mouse_t r = pointing_device_get_report();
+    r.buttons = mouseButtons;
+    pointing_device_set_report(r);
+    pointing_device_send();
 }
