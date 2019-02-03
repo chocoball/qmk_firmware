@@ -9,7 +9,12 @@
 #endif
 #ifdef POINTING_DEVICE_ENABLE
 #include "pointing_device.h"
+#include <avr/analog.h>
 #endif
+#ifdef CONSOLE_ENABLE
+#include <print.h>
+#endif
+
 extern keymap_config_t keymap_config;
 
 #ifdef RGBLIGHT_ENABLE
@@ -268,6 +273,13 @@ void matrix_init_user(void) {
 void pointing_device_task(void)
 {
     report_mouse_t r = pointing_device_get_report();
+
+    // int16_t axisx = analogRead(8);
+    // int16_t axisy = analogRead(9);
+
+    // uprintf("x=%d y=%d¥n", axisx, axisy);
+
+
     r.buttons = mouseButtons;
     pointing_device_set_report(r);
     pointing_device_send();
