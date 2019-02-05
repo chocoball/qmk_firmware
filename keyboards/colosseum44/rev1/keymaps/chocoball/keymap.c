@@ -9,7 +9,7 @@
 #endif
 #ifdef POINTING_DEVICE_ENABLE
 #include "pointing_device.h"
-#include <avr/analog.h>
+#include "analog.h"
 #endif
 #ifdef CONSOLE_ENABLE
 #include <print.h>
@@ -54,27 +54,6 @@ enum macro_keycodes {
 #define XXXXXXX KC_NO
 #define KC_LOWER LOWER
 #define KC_RAISE RAISE
-
-#define JP_CLON KC_QUOT  // : and +
-#define JP_AT   KC_LBRC  // @ and `
-#define JP_HAT  KC_EQL   // ^ and ~
-#define JP_ENUN KC_RO    // \ and _ (EN mark and UNder score)
-#define JP_ENVL KC_JYEN  // \ and | (EN mark and Vertical Line)
-#define JP_LBRC KC_RBRC  // [ and {
-#define JP_RBRC KC_BSLS  // ] and }
-#define JP_AMPR KC_CIRC  // &
-#define JP_QUES LSFT(KC_SLSH)  // ?
-#define JP_TILD LSFT(KC_EQL)  // ~
-#define JP_QUOT LSFT(KC_7)  // '
-#define JP_LPRN KC_ASTR  // (
-#define JP_RPRN KC_LPRN  // )
-#define JP_LCBR KC_RCBR  // {
-#define JP_RCBR KC_PIPE  // }
-#define JP_PIPE LSFT(KC_JYEN)  // |
-#define JP_ASTR LSFT(KC_QUOT)  // *
-#define JP_EQL LSFT(KC_MINS)  // =
-#define JP_PLUS LSFT(KC_SCLN)  // +
-#define JP_DQUO LSFT(KC_2)  // "
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -146,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ADJUST] = LAYOUT(
    KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,         KC_F6,   KC_F7,   KC_F8,      KC_F9,        KC_F10, KC_F11,
-   KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,       RGB_TOG, RGB_MOD,   KC_NO,LCA(KC_DEL), LALT(KC_PSCR), KC_F12,
+   KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,       RGB_TOG, RGB_MOD,   DEBUG,LCA(KC_DEL), LALT(KC_PSCR), KC_F12,
    KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,       RGB_VAD, RGB_VAI, RGB_HUD,    RGB_HUI,       RGB_SAD, RGB_SAI,
               KC_TRNS,KC_TRNS,KC_LOWER, KC_TRNS,    KC_TRNS, KC_RAISE, KC_TRNS,KC_TRNS
    )
@@ -272,15 +251,19 @@ void matrix_init_user(void) {
 
 void pointing_device_task(void)
 {
+  // if (!is_master)
+  {
     report_mouse_t r = pointing_device_get_report();
 
-    // int16_t axisx = analogRead(8);
-    // int16_t axisy = analogRead(9);
+    int16_t axisx = analogRead(8);
+//    int16_t axisy = analogRead(PB5);
+    int16_t axisy = analogRead(6);
 
-    // uprintf("x=%d y=%d¥n", axisx, axisy);
+    uprintf("master=%d pin(8)=%d pin(6)=%d\r\n", is_master, axisx, axisy);
 
 
     r.buttons = mouseButtons;
     pointing_device_set_report(r);
     pointing_device_send();
+  }
 }

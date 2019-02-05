@@ -32,7 +32,6 @@ endef
 # Helix keyboard customize
 # you can edit follows 7 Variables
 #  jp: 以下の7つの変数を必要に応じて編集します。
-HELIX_ROWS = 5              # Helix Rows is 4 or 5
 OLED_ENABLE = yes           # OLED_ENABLE
 LOCAL_GLCDFONT = no         # use each keymaps "helixfont.h" insted of "common/glcdfont.c"
 LED_BACK_ENABLE = yes       # LED backlight (Enable WS2812 RGB underlight.)
@@ -78,13 +77,6 @@ endif
 # $(eval $(call HELIX_CUSTOMISE_MSG))
 # $(info )
 
-ifneq ($(strip $(HELIX_ROWS)), 4)
-  ifneq ($(strip $(HELIX_ROWS)), 5)
-    $(error HELIX_ROWS = $(strip $(HELIX_ROWS)) is unexpected value)
-  endif
-endif
-OPT_DEFS += -DHELIX_ROWS=$(strip $(HELIX_ROWS))
-
 ifeq ($(strip $(LED_BACK_ENABLE)), yes)
   RGBLIGHT_ENABLE = yes
   OPT_DEFS += -DRGBLED_BACK
@@ -123,6 +115,10 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 
 ifndef QUANTUM_DIR
 	include ../../../../Makefile
+endif
+
+ifdef POINTING_DEVICE_ENABLE
+SRC += analog.c
 endif
 
 # Uncomment these for debugging
