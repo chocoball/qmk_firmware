@@ -119,6 +119,7 @@ endif
 
 ifdef POINTING_DEVICE_ENABLE
 SRC += analog.c
+SRC += joystick.c
 endif
 
 # Uncomment these for debugging
