@@ -17,8 +17,8 @@ BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 SWAP_HANDS_ENABLE = no        # Enable one-hand typing
 
-POINTING_DEVICE_ENABLE = yes
-CONSOLE_ENABLE = yes
+#POINTING_DEVICE_ENABLE = yes
+#CONSOLE_ENABLE = yes
 
 define HELIX_CUSTOMISE_MSG
   $(info Helix customize)

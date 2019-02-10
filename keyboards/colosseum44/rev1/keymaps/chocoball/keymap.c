@@ -219,6 +219,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
       break;
+#ifdef POINTING_DEVICE_ENABLE
     case LCLK:
       if (record->event.pressed) {
         mouse_button_on(MOUSE_BUTTON1);
@@ -241,6 +242,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       mouse_reset();
       return false;
       break;
+#endif
   }
   return true;
 }
@@ -254,6 +256,7 @@ void matrix_init_user(void) {
     #endif
 }
 
+#ifdef POINTING_DEVICE_ENABLE
 void pointing_device_task(void)
 {
     report_mouse_t r = pointing_device_get_report();
@@ -270,3 +273,4 @@ void pointing_device_task(void)
     pointing_device_set_report(r);
     pointing_device_send();
 }
+#endif
